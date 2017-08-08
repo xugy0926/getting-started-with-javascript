@@ -11,6 +11,7 @@ JSON全称JavaScript Object Notation，翻译成中文是 JavaScript对象表示
 
 #### 使用JSON的注意点
 
+![](src="https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-error/json.png")
 
 1. 红色：必须有挂括号。
 2. 黄色：双引号必须是半角字符（英文挂括号）
