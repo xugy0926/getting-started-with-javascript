@@ -17,5 +17,5 @@ ls   |显示当前目录的所有文件 | ls / ls -la
 ----|----|----
 cp | 赋值文件或目录| cp file1 file2
 rm | 删除文件或目录| rm file_name
-mv | 修改文件名或目录 | rm file_name
+mv | 修改文件名或目录 | mv file_name1 file_name2
 open | 打开文件或文件夹 | open file_name / open .
