@@ -2,7 +2,26 @@
 
 编程小白再进行操作之前请注意三点。
 
-1. 指令的构成，该空格的要空格。
+1. 文档中的指令前面都有一个>符号
+
+```
+> git push origin master
+```
+
+`>` 符号是从文档层面告诉你`git push origin master`是一条终端的指令。
+你在终端输入`git push origin master`时，别带`>`。
+
+指令和代码的对比如下
+
+```
+//这是一条终端执行，用`>`来凸显这是一条指令
+> git push origin master
+
+// 这是一行代码，不带`>`
+var i = 0;
+```
+
+2. 指令的构成，该空格的要空格。
 ```
 // 错误
 > xcode-select--install // select后面没有空格
@@ -11,7 +30,7 @@
 > xcode-select --install // select后面有空格
 ```
 
-2. 双引号要用英文
+3. 双引号要用英文
 ```
 // 错误
 > git commit -m “这是一次提交” // 用了中文的引号”“
@@ -20,7 +39,7 @@
 > git commit -m "这是一次提交" // 要用英文""
 ```
 
-3. 终端常用指令总结
+4. 终端常用指令总结
 
 [mac终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md)
 [win终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md)
