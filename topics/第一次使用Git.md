@@ -36,7 +36,7 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/terminal.png)
 
-打开Mac的终端, 并输入下面指令
+(在终端操作)
 ```
 > xcode-select --install
 ```
@@ -59,15 +59,27 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 
 #### Linux
 
-在终端输入
+(在终端操作)
 ```
 > sudo apt-get install git
 ```
 
-安装成功后，执行下面命令检查git的安装状态。
+#### 检查git的安装情况
+
+安装成功后，在终端执行下面指令检查git的安装状态。
+
+(在终端操作)
 ```
+// 查看git版本
 > git --version
+
+//或执行git，你会看到一堆关于git的命令解释内容
+> git   
+
 ```
+以上两个命令可以检查你的git是否安装成功。
+
+如果提示Command not found，说明git没有安装成功。
 
 ## 第一次上手
 
@@ -112,11 +124,15 @@ Warning: Permanently added the RSA host key for IP address '#{Some IP address}' 
 ```
 // mac终端快速打开getting-started-with-javascript
 > cd getting-started-with-javascript
+
+// 注意open后面是空格，还有一个.
 > open .
 ```
 ```
 // windows终端快速打开getting-started-with-javascript
 > cd getting-started-with-javascript
+
+
 > explorer .
 ```
 
@@ -127,8 +143,7 @@ Windows终端输入cd指令即可。
 
 #### 3. 第一次查看你改动的文件
 
-回到终端窗口。
-
+(在终端操作)
 ```
 // 确保你当前的终端进入到了项目getting-started-with-javascript
 > cd getting-started-with-javascript
@@ -139,6 +154,7 @@ Windows终端输入cd指令即可。
 
 #### 4. 第一次把改动在本地做一次提交
 
+(在终端操作)
 ```
 // 把修改过的文件做全部的添加
 > git add -A
@@ -151,6 +167,7 @@ Windows终端输入cd指令即可。
 
 #### 5. 第一次把提交都本地仓库的代码推送到远程（服务器）仓库
 
+(在终端操作)
 ```
 > git push origin master
 ```
