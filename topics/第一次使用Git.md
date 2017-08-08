@@ -1,3 +1,27 @@
+## 使用说明
+
+我知道你是编程小白。下面使用指令的时候注意两点。
+
+1. 指令的构成，该空格的要空格。
+```
+// 错误
+> xcode-select--install // select后面没有空格
+
+// 正确
+> xcode-select --install // select后面有空格
+```
+
+2. 双引号要用英文
+```
+// 错误
+> git commit -m “这是一次提交” // 用了中文的引号”“
+
+// 正确
+> > git commit -m "这是一次提交" // 要用英文""
+```
+
+## 开始
+
 Git 是目前世界上被最广泛使用的现代软件版本管理系统。Github是目前世界上最大的开源社区，如果你想利用好Github，Git是你必须要掌握的工具。
 
 [git简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)，这个教程很简单，快速帮你了解git，13页PPT形式的内容就说明了git最基本的操作精华。
@@ -140,10 +164,10 @@ Windows终端输入cd指令即可。
 
 ```
 // 设置你注册的github的邮箱
-git config --global user.email "you@example.com"
+> git config --global user.email "you@example.com"
 
 // 设置你注册的github的用户名
-git config --global user.name "your name"
+> git config --global user.name "your name"
 ```
 
 设置完上面后，再进行`git push origin master`。
