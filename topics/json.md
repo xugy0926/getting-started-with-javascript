@@ -2,16 +2,16 @@
 
 JSON全称JavaScript Object Notation，翻译成中文是 JavaScript对象表示法。
 
-## JSON格式的特点
+JSON格式的数据格式非常适合于服务器与 JavaScript 的数据交互，JSON数据格式也成为轻量级数据交换格式。
 
-[Image: file:///-/blob/SeIAAAyAoMR/tTtPjXwp6LWLSwlbiyLh8Q]
+## JSON格式的特点
 
 1. 最外层有一堆挂括号。
 2. 内容都是由一对对key/value组成。
 
 #### 使用JSON的注意点
 
-![](src="https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-error/json.png")
+[](src="https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-error/json.png")
 
 1. 红色：必须有挂括号。
 2. 黄色：双引号必须是半角字符（英文挂括号）
