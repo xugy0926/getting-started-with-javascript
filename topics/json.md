@@ -11,7 +11,8 @@ JSON格式的数据格式非常适合于服务器与 JavaScript 的数据交互�
 
 #### 使用JSON的注意点
 
-[](src="https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/json.png")
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/json.png)
+
 
 1. 红色：必须有挂括号。
 2. 黄色：双引号必须是半角字符（英文挂括号）
