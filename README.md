@@ -1,4 +1,4 @@
-## 学习用
+## 小白学JavaScript
 
 学习JavaScript？请[点这里](https://xugy0926.github.io/getting-started-with-javascript/)访问主页
 
