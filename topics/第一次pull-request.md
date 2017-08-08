@@ -1,6 +1,6 @@
 ## 使用说明
 
-我知道你是编程小白，下面使用指令的时候注意两点。
+编程小白再进行操作之前请注意三点。
 
 1. 指令的构成，该空格的要空格。
 ```
@@ -19,6 +19,12 @@
 // 正确
 > git commit -m "这是一次提交" // 要用英文""
 ```
+
+3. 终端常用指令总结
+
+[mac终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md)
+[win终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md)
+
 
 ## 开始
 
