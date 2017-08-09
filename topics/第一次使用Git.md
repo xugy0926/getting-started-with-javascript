@@ -223,7 +223,7 @@ Windows终端输入cd指令即可。
 
 项目创建以后，你可以用你自己的项目重复步骤1-5的操作。
 
-最终进行`git push origin master`后，提示信息显示`Everything up-to-date`。就表面你的推送成功了。
+最终进行`git push origin master`后，提示信息显示`Everything up-to-date`。就表示你的推送成功了。
 
 ## 结束语
 
