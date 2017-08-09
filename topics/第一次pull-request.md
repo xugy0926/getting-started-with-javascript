@@ -59,6 +59,15 @@ var i = 0;
 
 下面就教你怎么操作pull request。在进行操作之前，请先看一下项目[words-from-the-heart](https://github.com/xugy0926/words-from-the-heart)的项目说明。 
 
+## 图解fork别人项目和直接clone别人项目的区别
+
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-5.png)
+
+1. fork别人项目是先把别人的项目放在自己的远程仓库。
+2. clone别人项目是直接把别人的项目克隆到自己的本地。
+
+## 操作
+
 通过下面的操作，我希望我们一起完成一件有意思的事情。
 
 #### 1. fork项目words-from-the-heart
