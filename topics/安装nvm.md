@@ -33,6 +33,18 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm1.png)
 
+【注意】
+
+如果你验证安装还是提示`nvm: command not found`，请按照下面的步骤来操作。
+
+```
+> touch ~/.bash_profile
+> touch ~/.bashrc
+> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+
+执行成功后，关掉终端开启终端，然后继续往下走。
+
 #### 安装node
 
 通过nvm安装node的v8.0.0版本
