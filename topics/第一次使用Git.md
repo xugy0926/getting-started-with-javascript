@@ -50,6 +50,8 @@ Git 是目前世界上被最广泛使用的现代软件版本管理系统。Gith
 
 [git简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)，这个教程很简单，快速帮你了解git，13页PPT形式的内容就说明了git最基本的操作精华。
 
+[Pro git](http://iissnan.com/progit/)
+
 ## 第一次安装 Git
 
 #### Mac
