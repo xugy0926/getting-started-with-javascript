@@ -61,5 +61,6 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 你在node环境下运行的第一行代码就大功告成了。
 
+#### 退出node编辑模式
 
-
+快捷键：`ctl + c` 按两次
