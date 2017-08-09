@@ -4,8 +4,6 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 在使用node时，不要直接安装node，先安装nvm，由nvm来安装node。
 
-## MAC安装技巧
-
 ## 安装NVM
 
 #### MAC安装NVM
