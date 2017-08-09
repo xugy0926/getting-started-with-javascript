@@ -221,7 +221,7 @@ Windows终端输入cd指令即可。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/new-repository.png)
 
-项目创建以后，你可以用你自己的项目重复步骤1-5的操作。
+项目创建以后，你可以用你自己的项目重复步骤1-5的操作。（注意：很多同学在重复步骤1-5的时候，还是用的文档的url，我是希望你用你自己的项目url去git clone）
 
 最终进行`git push origin master`后，提示信息显示`Everything up-to-date`。就表示你的推送成功了。
 
