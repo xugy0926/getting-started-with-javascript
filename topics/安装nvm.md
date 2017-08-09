@@ -17,8 +17,11 @@ nvm全称是node version manager，中文意思是node版本管理。
 > curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 ```
 
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm4.png)
 
-和图一样，说明你已经安装成功。
+和下图一样结果，说明你已经安装成功。
+
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm5.png)
 
 #### 验证安装
 
