@@ -6,6 +6,10 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 ## 安装NVM
 
+#### Win安装NVM
+
+[请参考](https://segmentfault.com/a/1190000007612011)
+
 #### MAC安装NVM
 
 打开终端，输入
@@ -15,9 +19,6 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 
 和图一样，说明你已经安装成功。
-
-#### Win安装NVM
-
 
 #### 验证安装
 
@@ -29,9 +30,7 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm1.png)
 
-## 安装node
-
-有了nvm后，通过nvm安装node的方式都一样。
+#### 安装node
 
 通过nvm安装node的v8.0.0版本
 
@@ -41,7 +40,7 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm2.png)
 
-## 执行node
+#### 执行node
 
 在终端，输入node
 ```
