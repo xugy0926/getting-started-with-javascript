@@ -2,7 +2,9 @@
 
 # 如何从主项目更新fork的项目？
 
-#### step 1——打开：terminal，cd到自己fork后git clone的project下
+#### step 1
+
+打开：terminal，cd到自己fork后git clone的project下
 
 以Mac为例，首先需要打开terminal终端，进入到从github上fork的项目，并且该项目被git clone的你自己的本地目录下。
 
@@ -47,7 +49,7 @@
 
 ![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieva0qgf6j31kw0u8wnj.jpg)
 
-#### step 6——
+#### step 6
 
 ```
 > git push origin master
@@ -57,5 +59,5 @@
 ![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieve5w7kaj31kw0xj16i.jpg)
 
 ####  tips
-1. 你自己的文件在push到github之前一定要进行add和commit的操作，否则会有报错的提示*
-2. 操作完成后，去GitHub确认，自己项目文件内容与上游数据一致性，接下来再进行pull request操作*
+1. 你自己的文件在push到github之前一定要进行add和commit的操作，否则会有报错的提示
+2. 操作完成后，去GitHub确认，自己项目文件内容与上游数据一致性，接下来再进行pull request操作
