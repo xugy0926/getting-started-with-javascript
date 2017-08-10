@@ -10,6 +10,16 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 [请参考](https://segmentfault.com/a/1190000007612011)
 
+##### 注意事项
+
+1. 第一步中打开的Github上的nvm Windows版的下载链接，记得下载`nvm-setup.zip`这个安装版本的，教程上说了，但不够明确。
+
+2. 不管安装的时候是否更改安装路径，都不会出现教程中所说的设置目录的`Set Node.js Symlink`这一步。
+
+3. 如果更改了安装目录，比如我就把nvm的安装目录改到了`C:\Program Files\nvm`下，那么用命令`nm install latest`安装最新版node时，会提示没有访问node64.exe的权限（Win10系统，开启用户访问控制）。所以对于新手用户来说，全部按默认设置即可，一路下一步，安装好就行。
+
+4. 安装好nvm之后，需要用命令`nvm install latest`安装Node.js和npm。安装完成之后，务必执行命令`nvm use 8.2.1`，让nvm使用指定版本的Node.js，这样才可以在命令行中执行`node`和`npm`相关的命令。如果不执行命令`nvm use 8.2.1`，是无法使用`node`和`npm`的。
+
 #### MAC安装NVM
 
 打开终端，输入
