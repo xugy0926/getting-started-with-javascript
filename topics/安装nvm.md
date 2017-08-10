@@ -8,7 +8,9 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 #### Win安装NVM
 
-[请参考](https://segmentfault.com/a/1190000007612011)
+[Windows下安装nvm、npm及node.js](https://segmentfault.com/a/1190000010596717)，这篇文档是何伟同学总结整理，如遇到问题可以再微信群里问他。
+
+[网上另一篇总结文档](https://segmentfault.com/a/1190000007612011)
 
 #### MAC安装NVM
 
