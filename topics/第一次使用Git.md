@@ -1,6 +1,6 @@
 ## 使用说明
 
-编程小白再进行操作之前请注意三点。
+编程小白在进行操作之前请注意三点。
 
 1. 文档中的指令前面都有一个>符号
 
@@ -70,7 +70,7 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/xcode-select-install.png)
 
 如何判断xcode的Command Line Tools呢？
-在终端再次输入`xcode-select --install`， 如果终端出现以下信息表面你已经安装完Command Line Tools了。
+在终端再次输入`xcode-select --install`， 如果终端出现以下信息表明你已经安装完Command Line Tools了。
 ```
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
@@ -191,7 +191,7 @@ Windows终端输入cd指令即可。
 // -m 后面一定要带一段双引号的描述内容。这段描述你可以任意写，目的是说明你这次提交的日志信息。
 ```
 
-#### 5. 第一次把提交都本地仓库的代码推送到远程（服务器）仓库
+#### 5. 第一次把提交到本地仓库的代码推送到远程（服务器）仓库
 
 (在终端操作)
 ```
