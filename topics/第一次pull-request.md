@@ -1,3 +1,52 @@
+## 使用说明
+
+编程小白再进行操作之前请注意三点。
+
+1. 文档中的指令前面都有一个>符号
+
+```
+> git push origin master
+```
+
+`>` 符号是从文档层面告诉你`git push origin master`是一条终端的指令。
+你在终端输入`git push origin master`时，别带`>`。
+
+指令和代码的对比如下
+
+```
+//这是一条终端执行，用`>`来凸显这是一条指令
+> git push origin master
+
+// 这是一行代码，不带`>`
+var i = 0;
+```
+
+2. 指令的构成，该空格的要空格。
+```
+// 错误
+> xcode-select--install // select后面没有空格
+
+// 正确
+> xcode-select --install // select后面有空格
+```
+
+3. 双引号要用英文
+```
+// 错误
+> git commit -m “这是一次提交” // 用了中文的引号”“
+
+// 正确
+> git commit -m "这是一次提交" // 要用英文""
+```
+
+4. 终端常用指令总结
+
+[mac终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md)
+[win终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md)
+
+
+## 开始
+
 还记得上一篇【第一次使用git】吗？这一次我们发起一次pull request。
 
 当我们要协同工作的时候。一定会有一个人先建立一个新项目（命名为项目A），其他开发者会fork项目A到各自的仓库。
@@ -9,6 +58,15 @@
 当项目A的负责人收到你的pull请求时，就会进行merge动作。
 
 下面就教你怎么操作pull request。在进行操作之前，请先看一下项目[words-from-the-heart](https://github.com/xugy0926/words-from-the-heart)的项目说明。 
+
+## 图解fork别人项目和直接clone别人项目的区别
+
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-5.png)
+
+1. fork别人项目是先把别人的项目放在自己的远程仓库。
+2. clone别人项目是直接把别人的项目克隆到自己的本地。
+
+## 操作
 
 通过下面的操作，我希望我们一起完成一件有意思的事情。
 
