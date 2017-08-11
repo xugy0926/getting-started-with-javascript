@@ -1,6 +1,6 @@
 ## 使用说明
 
-编程小白再进行操作之前请注意三点。
+编程小白在进行操作之前请注意三点。
 
 1. 文档中的指令前面都有一个>符号
 
@@ -22,6 +22,7 @@ var i = 0;
 ```
 
 2. 指令的构成，该空格的要空格。
+
 ```
 // 错误
 > xcode-select--install // select后面没有空格
@@ -31,6 +32,7 @@ var i = 0;
 ```
 
 3. 双引号要用英文
+
 ```
 // 错误
 > git commit -m “这是一次提交” // 用了中文的引号”“
@@ -63,6 +65,7 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/terminal.png)
 
 (在终端操作)
+
 ```
 > xcode-select --install
 ```
@@ -71,9 +74,11 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 
 如何判断xcode的Command Line Tools呢？
 在终端再次输入`xcode-select --install`， 如果终端出现以下信息表面你已经安装完Command Line Tools了。
+
 ```
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
+
 Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 
 检查Git命令是否成功，在终端输入`git --version`
@@ -81,11 +86,13 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/git-check.png)
 
 #### windows
+
 下载 Git SCM, https://git-scm.com/download/win
 
 #### Linux
 
 (在终端操作)
+
 ```
 > sudo apt-get install git
 ```
@@ -95,14 +102,15 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 安装成功后，在终端执行下面指令检查git的安装状态。
 
 (在终端操作)
+
 ```
 // 查看git版本
 > git --version
 
 //或执行git，你会看到一堆关于git的命令解释内容
-> git   
-
+> git
 ```
+
 以上两个命令可以检查你的git是否安装成功。
 
 如果提示Command not found，说明git没有安装成功。
@@ -112,14 +120,15 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 #### 1. 第一次克隆一个项目到你的电脑上
 
 (在终端操作)
+
 ```
 // 创建一个工作用的文件夹，命名为my_project。这样做的目的是把你从git上下载下来的项目都规整到文件夹my_project里。
-> mkdir my_project 
+> mkdir my_project
 
-// 进入文件夹my_project 
+// 进入文件夹my_project
 > cd my_project
 
-// 开始克隆项目    
+// 开始克隆项目
 > git clone https://github.com/xugy0926/getting-started-with-javascript.git
 ```
 
@@ -131,11 +140,12 @@ git clone的时候请使用https的url。不建议用ssh那个地址。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/https-clone-url.png)
 
-
 如果你真的要用ssh那个url，可能会出现下面的错误提示。
+
 ```
 Warning: Permanently added the RSA host key for IP address '#{Some IP address}' to the list of known hosts.
 ```
+
 这是因为你本地电脑没有和github建立安全的链接。使用ssh连接配置请参考https://help.github.com/articles/connecting-to-github-with-ssh/
 
 #### 2. 第一次改动
@@ -154,6 +164,7 @@ Warning: Permanently added the RSA host key for IP address '#{Some IP address}' 
 // 注意open后面是空格，还有一个.
 > open .
 ```
+
 ```
 // windows终端快速打开getting-started-with-javascript
 > cd getting-started-with-javascript
@@ -170,6 +181,7 @@ Windows终端输入cd指令即可。
 #### 3. 第一次查看你改动的文件
 
 (在终端操作)
+
 ```
 // 确保你当前的终端进入到了项目getting-started-with-javascript
 > cd getting-started-with-javascript
@@ -181,6 +193,7 @@ Windows终端输入cd指令即可。
 #### 4. 第一次把改动在本地做一次提交
 
 (在终端操作)
+
 ```
 // 把修改过的文件做全部的添加
 > git add -A
@@ -194,6 +207,7 @@ Windows终端输入cd指令即可。
 #### 5. 第一次把提交都本地仓库的代码推送到远程（服务器）仓库
 
 (在终端操作)
+
 ```
 > git push origin master
 ```
@@ -203,7 +217,7 @@ Windows终端输入cd指令即可。
 
 2. 第一次往自己的项目推送时，会提示输入github的账号和密码。你只要按照提示来操作即可。
 
-![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/password-request.png) 
+![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/password-request.png)
 
 ```
 // 设置你注册的github的邮箱
@@ -230,8 +244,9 @@ Windows终端输入cd指令即可。
 如果前面的步骤你都走通了，说明你对于Git最基本的操作已经可以搞定了。
 
 基本操作
+
 - 从Github上克隆一个项目到本地。 `git clone url`
-- 修改项目。 
+- 修改项目。
 - 添加修改到本地。`git add -A`
 - 提交修改到本地。`git commit -m "some logo"`
 - 推送提交到远程。 `git push origin master`
