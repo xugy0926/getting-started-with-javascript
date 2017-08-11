@@ -3,7 +3,7 @@
 
 ##step 1——打开：terminal，cd到自己fork后git clone的project下
 ###以Mac为例，首先需要打开terminal终端，进入到从github上fork的项目，并且该项目被git clone的你自己的本地目录下。
-###![Image text](https://ws4.sinaimg.cn/large/006tNc79gy1fieu7pcpwzj31kw14cwpc.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/WechatIMG186.jpeg)
 
 ##step 2——step 2 git remote add upstream xxxx
 ###与上游仓库同步代码之前，必须配置 remote，“xxxx”代表你需要与之保持同步的数据源，本次作业为例，需要键入老师的git项目地址
