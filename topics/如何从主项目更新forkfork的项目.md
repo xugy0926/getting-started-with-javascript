@@ -13,7 +13,7 @@
 ###![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieuxltln2j31ka0qqadc.jpg)
 ##step 4——git fetch upstream
 ###此操作的意思是取上游数据，简而言之，就是将老师的问题，下载至你的本地
-###![Image text]https://ws2.sinaimg.cn/large/006tNc79gy1fiev8mx50ij31kw0u8wnj.jpg
+###![Image text](https://ws2.sinaimg.cn/large/006tNc79gy1fiev8mx50ij31kw0u8wnj.jpg)
 ###![Image text](https://ws4.sinaimg.cn/large/006tNc79gy1fiev3jpzpvj31kw0kr79w.jpg)
 ##step 5——git merge upstream/master
 ###进行主节点和上游节点数据的合并
