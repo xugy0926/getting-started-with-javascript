@@ -1,8 +1,27 @@
 ## 使用说明
 
-我知道你是编程小白，下面使用指令的时候注意两点。
+编程小白再进行操作之前请注意三点。
 
-1. 指令的构成，该空格的要空格。
+1. 文档中的指令前面都有一个>符号
+
+```
+> git push origin master
+```
+
+`>` 符号是从文档层面告诉你`git push origin master`是一条终端的指令。
+你在终端输入`git push origin master`时，别带`>`。
+
+指令和代码的对比如下
+
+```
+//这是一条终端执行，用`>`来凸显这是一条指令
+> git push origin master
+
+// 这是一行代码，不带`>`
+var i = 0;
+```
+
+2. 指令的构成，该空格的要空格。
 ```
 // 错误
 > xcode-select--install // select后面没有空格
@@ -11,7 +30,7 @@
 > xcode-select --install // select后面有空格
 ```
 
-2. 双引号要用英文
+3. 双引号要用英文
 ```
 // 错误
 > git commit -m “这是一次提交” // 用了中文的引号”“
@@ -20,11 +39,18 @@
 > git commit -m "这是一次提交" // 要用英文""
 ```
 
+4. 终端常用指令总结
+
+[mac终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md)
+[win终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md)
+
 ## 开始
 
 Git 是目前世界上被最广泛使用的现代软件版本管理系统。Github是目前世界上最大的开源社区，如果你想利用好Github，Git是你必须要掌握的工具。
 
 [git简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)，这个教程很简单，快速帮你了解git，13页PPT形式的内容就说明了git最基本的操作精华。
+
+[Pro git](http://iissnan.com/progit/)
 
 ## 第一次安装 Git
 
@@ -36,7 +62,7 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/terminal.png)
 
-打开Mac的终端, 并输入下面指令
+(在终端操作)
 ```
 > xcode-select --install
 ```
@@ -59,15 +85,27 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 
 #### Linux
 
-在终端输入
+(在终端操作)
 ```
 > sudo apt-get install git
 ```
 
-安装成功后，执行下面命令检查git的安装状态。
+#### 检查git的安装情况
+
+安装成功后，在终端执行下面指令检查git的安装状态。
+
+(在终端操作)
 ```
+// 查看git版本
 > git --version
+
+//或执行git，你会看到一堆关于git的命令解释内容
+> git   
+
 ```
+以上两个命令可以检查你的git是否安装成功。
+
+如果提示Command not found，说明git没有安装成功。
 
 ## 第一次上手
 
@@ -112,11 +150,15 @@ Warning: Permanently added the RSA host key for IP address '#{Some IP address}' 
 ```
 // mac终端快速打开getting-started-with-javascript
 > cd getting-started-with-javascript
+
+// 注意open后面是空格，还有一个.
 > open .
 ```
 ```
 // windows终端快速打开getting-started-with-javascript
 > cd getting-started-with-javascript
+
+
 > explorer .
 ```
 
@@ -127,8 +169,7 @@ Windows终端输入cd指令即可。
 
 #### 3. 第一次查看你改动的文件
 
-回到终端窗口。
-
+(在终端操作)
 ```
 // 确保你当前的终端进入到了项目getting-started-with-javascript
 > cd getting-started-with-javascript
@@ -139,6 +180,7 @@ Windows终端输入cd指令即可。
 
 #### 4. 第一次把改动在本地做一次提交
 
+(在终端操作)
 ```
 // 把修改过的文件做全部的添加
 > git add -A
@@ -151,6 +193,7 @@ Windows终端输入cd指令即可。
 
 #### 5. 第一次把提交都本地仓库的代码推送到远程（服务器）仓库
 
+(在终端操作)
 ```
 > git push origin master
 ```
@@ -178,9 +221,9 @@ Windows终端输入cd指令即可。
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/new-repository.png)
 
-项目创建以后，你可以用你自己的项目重复步骤1-5的操作。
+项目创建以后，你可以用你自己的项目重复步骤1-5的操作。（注意：很多同学在重复步骤1-5的时候，还是用的文档的url，我是希望你用你自己的项目url去git clone）
 
-最终进行`git push origin master`后，提示信息显示`Everything up-to-date`。就表面你的推送成功了。
+最终进行`git push origin master`后，提示信息显示`Everything up-to-date`。就表示你的推送成功了。
 
 ## 结束语
 
