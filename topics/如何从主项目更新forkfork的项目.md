@@ -3,24 +3,23 @@
 
 ##step 1——打开：terminal，cd到自己fork后git clone的project下
 ###以Mac为例，首先需要打开terminal终端，进入到从github上fork的项目，并且该项目被git clone的你自己的本地目录下。
-###![Image text](https://github.com/zhanglinalove/my_post_image/WechatIMG186.jpeg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG186.jpeg)
 
 ##step 2——step 2 git remote add upstream xxxx
 ###与上游仓库同步代码之前，必须配置 remote，“xxxx”代表你需要与之保持同步的数据源，本次作业为例，需要键入老师的git项目地址
-###![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieups178zj31kw0v5kdu.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG187.jpeg)
 ##step 3——git checkout master
 ###切换至master分支下，该步骤操作简单，直接操作即可
-###![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieuxltln2j31ka0qqadc.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG188.jpeg)
 ##step 4——git fetch upstream
 ###此操作的意思是取上游数据，简而言之，就是将老师的问题，下载至你的本地
-###![Image text](https://ws2.sinaimg.cn/large/006tNc79gy1fiev8mx50ij31kw0u8wnj.jpg)
-###![Image text](https://ws4.sinaimg.cn/large/006tNc79gy1fiev3jpzpvj31kw0kr79w.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG189.jpeg)
 ##step 5——git merge upstream/master
 ###进行主节点和上游节点数据的合并
-###![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieva0qgf6j31kw0u8wnj.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG190.jpeg)
 ##step 6——git push origin master
 ###合并后的文件进行push操作，将本地文件上传至github服务器上。
-###![Image text](https://ws3.sinaimg.cn/large/006tNc79gy1fieve5w7kaj31kw0xj16i.jpg)
+###![Image text](https://github.com/zhanglinalove/my_post_image/blob/master/WechatIMG191.jpeg)
 
 
 #tips！#
