@@ -1,12 +1,12 @@
 //声明并定义变量
 
-var name = 'xugaoyang';
+var name = 'xiaoming';
 var age = 18;
 var height = 170, weight = 130.1;
-var xinshengUserName = 'xugaoyang';
-var wechat_user_name = 'xugy0926';
 var isMan = true;
 var student = false;
+var xinshengUserName = 'xiaoming';
+var wechat_user_name = 'xiaoming';
 var locaitonBase = '北京';
 var company = locaitonBase + '新生大学';
 var myLikeColorsList = ['blue', 'green', 'black', 'write'];
@@ -35,7 +35,7 @@ console.log(name);
 
 console.log("年龄: " + age);
 console.log('身高 = ' + height + ', 体重 = ' + weight);
-console.log('地点: ' + location);
+console.log('地点: ' + locaitonBase);
 console.log('公司: ' + company);
 
 console.log('\n');
@@ -62,8 +62,35 @@ for (var i = 0; i < myLikeFoods.length; i++) {
 }
 
 console.log('--------------------');
-
 console.log('\n');
 console.log('JavaScript课程信息');
 console.log(myJavaScriptLessionInfoObj);
+
+console.log('\n');
+console.log('#####################');
+console.log('我是分界线')
+console.log('#####################');
+// 用上面定义的变量重新打包，并定义出xiaoming这边变量
+
+var xiaoming = {
+  name: name,
+  config: {
+    age: age,
+    height: height,
+    weight: weight,
+    isMan: isMan,
+    student: student
+  },
+  like: {
+    myLikeColorsList: myLikeColorsList,
+    myLikeFoods: myLikeColorsList
+  },
+  work: {
+    locaitonBase: locaitonBase,
+    company: company
+  },
+  myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
+}
+
+console.log(xiaoming);
 
