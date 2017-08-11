@@ -15,6 +15,8 @@
 
 [JSON wiki](https://zh.wikipedia.org/wiki/JSON)
 
+[第一次使用JSON](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8JSON.md)
+
 #### 错误2
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/pull-request-error/error-2.png)
