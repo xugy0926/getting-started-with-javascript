@@ -29,20 +29,20 @@ fs.readdir(pathString, function(err, files) {
     return;
   }
 
-  //把含有json的文件名过滤出来,把所有文件保存在jsonFiles数组中
-  var jsonFiles = [];
+  //把含有"md"字符的文件名过滤出来,把所有文件保存在mdFiles数组中
+  var mdFiles = [];
   for (var i = 0; i < files.length; i++) {
-    if (files[i].includes("md")) {
-      jsonFiles.push(files[i]);
+    if (files[i].includes('md')) {
+      mdFiles.push(files[i]);
     }
   }
 
   //依据jsonFiles中的内容，把含有filterKeyString关键字的文件名过滤出来
   // 并保存在filterFiles数组中
   var filterFiles = [];
-  for (var i = 0; i < jsonFiles.length; i++) {
-    if (jsonFiles[i].includes(filterKeyString)) {
-      filterFiles.push(jsonFiles[i]);
+  for (var i = 0; i < mdFiles.length; i++) {
+    if (mdFiles[i].includes(filterKeyString)) {
+      filterFiles.push(mdFiles[i]);
     }
   }
 
