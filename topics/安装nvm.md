@@ -49,9 +49,9 @@ nvm全称是node version manager，中文意思是node版本管理。
 >执行成功后，关掉终端开启终端，然后继续往下走。
 
 如果问题仍没解决，请打开终端尝试。
-...
+
 > source ~/.bashrc
-...
+
 
 
 #### 安装node
