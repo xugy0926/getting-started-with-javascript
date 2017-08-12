@@ -1,17 +1,19 @@
-#### 背景
+## 背景
 低于初学者来说，当自己将内容push到github，或者pull request到master（即老师的GitHub）后，不知道如何判断是否提交成功，再加上英语不好犹如雪上加霜，面对一大片英文更是一脸懵逼。为了解决初学者的这个疑问，故此进行了总结，如有错误还望指出。
 再次也提醒小白，**一定要抓住关键字**，尤其是自己认识的关键字。
 
-#### 如何查看提交是否成功
+## 如何查看提交是否成功
 首先说明有两种情况：
 - 将本地代码push到自己的GitHub上
 - 将自己GitHub上的代码pull request到老师的GitHub上
 
 这两种情况均有两种方法可以参考
 
-#####一、将本地代码push到自己的GitHub上
+###一、将本地代码push到自己的GitHub上
 我们通过终端将本地代码推到GitHub上，使用的命令如下：
+```
 > git push origin master
+```
 
 这就涉及到终端和GitHub，所以我们可以从这两处来查看
 
@@ -27,7 +29,7 @@
 
 注：上图红框中出现的描述，如：**添加图片**，是在使用*git commit -m* 命令时所添加的描述，此处也是我初学时抓住的关键字
 
-####二、将自己GitHub上的代码pull request到老师的GitHub上
+###二、将自己GitHub上的代码pull request到老师的GitHub上
 pull request这个操作是在GitHub上完成的，所以在GitHub上查看
 
 方法1：在GitHub上进行pull request后会直接出现结果，若出现下图即为成功
