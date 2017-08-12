@@ -23,7 +23,6 @@ var myJavaScriptLessionInfoObj = {
   girlsStudent: 119,
   lessionTarget: '帮助更多小白学习JavaScript',
   githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
-  
 };
 
 /*
