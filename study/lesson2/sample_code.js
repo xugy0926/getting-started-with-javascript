@@ -12,7 +12,6 @@ var company = locaitonBase + '新生大学';
 var myLikeColorsList = ['blue', 'green', 'black', 'write'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
 
-
 //声明并定义对象变量
 var myJavaScriptLessionInfoObj = {
   teacher: name,
@@ -23,7 +22,7 @@ var myJavaScriptLessionInfoObj = {
   boysStudent: 417,
   girlsStudent: 119,
   lessionTarget: '帮助更多小白学习JavaScript',
-  githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript',
+  githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
   
 };
 
@@ -93,7 +92,6 @@ var xiaoming = {
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
 }
-
 
 console.log(xiaoming);
 
