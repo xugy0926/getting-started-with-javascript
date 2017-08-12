@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+/*
+*
+*  【运行步骤】
+*  1. 终端进入到getting-started-with-javascript/study/lesson2
+*  2. > node sample_code.js
+*
+*/
+
+>>>>>>> upstream/master
 //声明并定义变量
 
 var name = 'xiaoming';
