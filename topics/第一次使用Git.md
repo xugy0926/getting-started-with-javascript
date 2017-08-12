@@ -25,10 +25,10 @@ var i = 0;
 
 ```
 // 错误
-> xcode-select--install // select后面没有空格
+> xcode-select—install // select后面没有空格
 
 // 正确
-> xcode-select --install // select后面有空格
+> xcode-select —install // select后面有空格
 ```
 
 3. 双引号要用英文
@@ -67,20 +67,20 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 (在终端操作)
 
 ```
-> xcode-select --install
+> xcode-select —install
 ```
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/xcode-select-install.png)
 
 如何判断xcode的Command Line Tools呢？
-在终端再次输入`xcode-select --install`， 如果终端出现以下信息表明你已经安装完Command Line Tools了。
+在终端再次输入`xcode-select —install`， 如果终端出现以下信息表明你已经安装完Command Line Tools了。
 ```
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
 
 Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 
-检查Git命令是否成功，在终端输入`git --version`
+检查Git命令是否成功，在终端输入`git —version`
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/git-check.png)
 
@@ -121,7 +121,7 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 (在终端操作)
 
 ```
-// 创建一个工作用的文件夹，命名为my_project。这样做的目的是把你从git上下载下来的项目都规整到文件夹my_project里。
+// 创建一个工作用的文件夹，命名为my_project（你可以命名成你喜欢的名字，这不过是一个文件夹的名字而已）。这样做的目的是把你从git上下载下来的项目都规整到文件夹my_project里。
 > mkdir my_project
 
 // 进入文件夹my_project
@@ -146,6 +146,10 @@ Warning: Permanently added the RSA host key for IP address '#{Some IP address}' 
 ```
 
 这是因为你本地电脑没有和github建立安全的链接。使用ssh连接配置请参考https://help.github.com/articles/connecting-to-github-with-ssh/
+
+
+为什么选择https的url？=> 在以前https还没普及时，http协议承担了大部分网页的数据传输。但http并不安全，为了解决http不安全的问题就需要用ssh。现在https已经普及了。ssh的配置相对来讲很麻烦，在使用github时可以抛弃掉。
+
 
 #### 2. 第一次改动
 
@@ -220,10 +224,10 @@ Windows终端输入cd指令即可。
 
 ```
 // 设置你注册的github的邮箱
-> git config --global user.email "you@example.com"
+> git config --global user.email "you@example.com (mailto:you@example.com)"
 
 // 设置你注册的github的用户名
-> git config --global user.name "your name"
+> git config —global user.name "your name"
 ```
 
 设置完上面后，再进行`git push origin master`。
@@ -242,12 +246,13 @@ Windows终端输入cd指令即可。
 
 如果前面的步骤你都走通了，说明你对于Git最基本的操作已经可以搞定了。
 
-基本操作
+#### 基本操作
 
-- 从Github上克隆一个项目到本地。 `git clone url`
+- 从Github上克隆一个项目仓库到本地项目仓库。 `git clone url`
 - 修改项目。
-- 添加修改到本地。`git add -A`
-- 提交修改到本地。`git commit -m "some logo"`
-- 推送提交到远程。 `git push origin master`
+- 添加修改到本地仓库的缓存区域。`git add -A`
+- 把缓存区域的修改提交到本地仓库。`git commit -m "some logo"`
+- 将本地仓库的提交推送到到远程仓库。 `git push origin master`
 
 善用Github对我们学习和工作非常有用，除了学习编程之外，还可以把Github当做存文档的远程硬盘，你不妨试试把自己的日记也放在Github上来存。
+
