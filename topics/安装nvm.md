@@ -12,6 +12,8 @@ nvm全称是node version manager，中文意思是node版本管理。
 
 [网上另一篇总结文档](https://segmentfault.com/a/1190000007612011)
 
+如果上面安装还是不行？那你们就直接安装nodejs的最新版本[点这里](https://nodejs.org/zh-cn/ )
+
 #### MAC安装NVM
 
 打开终端，输入
