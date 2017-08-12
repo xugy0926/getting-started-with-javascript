@@ -9,12 +9,11 @@
 
 这两种情况均有两种方法可以参考
 
-###一、将本地代码push到自己的GitHub上
+### 一、将本地代码push到自己的GitHub上
 我们通过终端将本地代码推到GitHub上，使用的命令如下：
 ```
 > git push origin master
 ```
-
 这就涉及到终端和GitHub，所以我们可以从这两处来查看
 
 方法1：在终端执行*git push origin master*命令后，若终端出现下图即为成功
@@ -29,7 +28,7 @@
 
 注：上图红框中出现的描述，如：**添加图片**，是在使用*git commit -m* 命令时所添加的描述，此处也是我初学时抓住的关键字
 
-###二、将自己GitHub上的代码pull request到老师的GitHub上
+### 二、将自己GitHub上的代码pull request到老师的GitHub上
 pull request这个操作是在GitHub上完成的，所以在GitHub上查看
 
 方法1：在GitHub上进行pull request后会直接出现结果，若出现下图即为成功
