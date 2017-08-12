@@ -2,7 +2,7 @@
 *
 *  【运行步骤】
 *  1. 终端进入到getting-started-with-javascript/study/lesson2
-*  3. > node sample_code.js
+*  2. > node sample_code.js
 *
 */
 
