@@ -1,3 +1,11 @@
+/*
+*
+*  【运行步骤】
+*  1. 终端进入到getting-started-with-javascript/study/lesson2
+*  3. > node sample_code.js
+*
+*/
+
 //声明并定义变量
 
 var name = 'xiaoming';
