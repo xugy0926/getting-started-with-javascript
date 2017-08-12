@@ -4,13 +4,15 @@ var name = 'xiaoming';
 var age = 18;
 var height = 170, weight = 130.1;
 var isMan = true;
-var student = false;
+var students = false;
 var xinshengUserName = 'xiaoming';
 var wechat_user_name = 'xiaoming';
 var locaitonBase = '北京';
 var company = locaitonBase + '新生大学';
 var myLikeColorsList = ['blue', 'green', 'black', 'write'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
+var name2 = 'xiehongsheng'
+var whatidid ='xuexixuexizaixuexi'
 
 //声明并定义对象变量
 var myJavaScriptLessionInfoObj = {
@@ -22,7 +24,9 @@ var myJavaScriptLessionInfoObj = {
   boysStudent: 417,
   girlsStudent: 119,
   lessionTarget: '帮助更多小白学习JavaScript',
-  githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
+  githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript',
+  student:name2  ,
+  learningslogn:whatidid
 };
 
 /*
@@ -32,7 +36,7 @@ var myJavaScriptLessionInfoObj = {
 
 console.log('姓名');
 console.log(name);
-
+console.log(name2)
 console.log("年龄: " + age);
 console.log('身高 = ' + height + ', 体重 = ' + weight);
 console.log('地点: ' + locaitonBase);
@@ -92,5 +96,6 @@ var xiaoming = {
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
 }
 
-console.log(xiaoming);
+
+console.log(xiaoming)
 
