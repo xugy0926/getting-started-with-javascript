@@ -17,6 +17,7 @@
 #### step 2
 
 ```
+// 注意，如果你之前通不过，这一不用再做。
 > git remote add upstream xxxx
 ```
 
