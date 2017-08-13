@@ -1,6 +1,6 @@
 # Git常用操作笔记
 
-**新人注意**：以下出现的代码段，行首有美元符号`$`，并且后跟空格再接着是代码的，是输入的命令。否则，就是执行命令后输出的结果。
+**新人注意**：以下出现的代码段，行首有大于号`>`，并且后跟空格再接着是代码的，是输入的命令。否则，就是执行命令后输出的结果。
 
 ## 为什么要先add再commit呢？
 
@@ -53,13 +53,13 @@ git的一大功能，就是可以将文件退回到某次commit之前的版本�
 首先，添加徐老师的仓库，并命名为upstream，方便以后再次调用。
 
 ```bash
-$ git remote add upstream https://github.com/xugy0926/getting-started-with-javascript.git
+> git remote add upstream https://github.com/xugy0926/getting-started-with-javascript.git
 ```
 
 然后将老师的仓库中的内容下载至本地。注意，下载至本地的内容，和自己的仓库是互不干扰的。
 
 ```bash
-$ git fetch upstream master
+> git fetch upstream master
 ```
 
 这时，徐老师仓库的最新内容已经下载至本地了。
@@ -67,7 +67,7 @@ $ git fetch upstream master
 我们先不急着合并进来，先看看自己的仓库和老师的仓库有哪些不同。
 
 ```bash
-$ git diff upstream/master
+> git diff upstream/master
 ```
 
 下图是执行后的结果。
@@ -79,7 +79,7 @@ $ git diff upstream/master
 对比完徐老师和自己仓库的不同之后，就要把这些内容（upstream/master，代表upstream这个源的master分支）合并到自己的仓库中了。
 
 ```bash
-$ git merge upstream/master
+> git merge upstream/master
 ```
 
 然后就可以提交自己的更改，或者进行其它操作了。
@@ -97,25 +97,25 @@ $ git merge upstream/master
 首先，将老师的仓库的最新版拉到本地（添加upstream源的操作请查看上一小节的内容，此处不再重复）。
 
 ```bash
-$ git fetch upstream master
+> git fetch upstream master
 ```
 
 用拉到本地的仓库新建一个隶属于自己仓库的分支work。
 
 ```bash
-$ git checkout -b work upstream/master
+> git checkout -b work upstream/master
 ```
 
 将91d4fce这次commit（修改老师文章中文字错误和格式的操作）放入新增的work分支中。
 
 ```bash
-$ git cherry-pick 91d4fce
+> git cherry-pick 91d4fce
 ```
 
 将本地分支work推送至服务器上，并指定origin为默认主机。完成之后，在网页端提交自己的PR即可。
 
 ```bash
-$ git push -u origin work
+> git push -u origin work
 ```
 
 等到暂时没有PR需要提交了，并且自己的作业也写完的时候，就可以将先将work分支与徐老师最新的代码同步，然后再将work分支同步到master分支上就行了。
@@ -139,19 +139,19 @@ $ git push -u origin work
 先是将work分支拉至家里的笔记本上，这时候work还没有合并至本机的仓库中。这样可以避免操作错误，影响本机的仓库。
 
 ```bash
-$ git fetch origin work
+> git fetch origin work
 ```
 
 接着再将work分支合并至本机的仓库之中。
 
 ```bash
-$ git merge origin/work
+> git merge origin/work
 ```
 
 最后再切换一下分支，就可以在家里的笔记本上继续快乐地学习了~
 
 ```bash
-$ git checkout work
+> git checkout work
 ```
 
 参考资料：
@@ -170,8 +170,8 @@ $ git checkout work
 `git push -d`命令用于删除远程分支，`git branch -d`命令则用于删除本地分支。
 
 ```bash
-$ git push -d origin test
-$ git branch -d test
+> git push -d origin test
+> git branch -d test
 ```
 
 #### 强制删除本地分支
@@ -181,7 +181,7 @@ $ git branch -d test
 注意这里的`-D`是大写，编程输入代码时，大小写一定要看仔细。
 
 ```bash
-$ git branch -D work
+> git branch -D work
 ```
 
 参考资料：
@@ -201,13 +201,13 @@ $ git branch -D work
 首先，重命名本地的work分支为note。
 
 ```bash
-$ git branch -m work note
+> git branch -m work note
 ```
 
 操作完成后，查看本地的分支列表，确认一下。
 
 ```bash
-$ git branch --list
+> git branch --list
 * master
   patch
   note
@@ -220,7 +220,7 @@ $ git branch --list
 然后删除远程的work分支，结果报错。
 
 ```bash
-$ git push remote :work
+> git push remote :work
 fatal: 'remote' does not appear to be a git repository
 fatal: Could not read from remote repository.
 
@@ -231,7 +231,7 @@ and the repository exists.
 看来这个方法不行，那就再看看刚才那个链接里其他人的回答，往下翻，第二个回答和第一个差不多，第三个有些不一样，把上面命令中的remote换成了origin，来，试一试。
 
 ```bash
-$ git push origin :work
+> git push origin :work
 ```
 
 第一次执行失败，提示超时错误，说明输入的命令是对的，只是网络状态不太好。
@@ -254,7 +254,7 @@ To https://github.com/Dream4ever/getting-started-with-javascript.git
 我们先看看远程有哪些分支。
 
 ```bash
-$ git branch -r
+> git branch -r
   origin/HEAD -> origin/master
   origin/master
   origin/patch
@@ -266,7 +266,7 @@ $ git branch -r
 接着再看看本地分支和远程分支之间的对应关系。
 
 ```bash
-$ git branch -vv
+> git branch -vv
 * master 79fb746 [origin/master] Merge remote-tracking branch 'upstream/master'
   patch  9320211 [origin/patch] Merge pull request #81 from WangZhong2014/master
   note  9320211 [origin/work: gone] Merge pull request #81 from WangZhong2014/master
@@ -277,7 +277,7 @@ $ git branch -vv
 我们先在本地切换至note分支。
 
 ```bash
-$ git checkout note
+> git checkout note
 Switched to branch 'note'
 Your branch is based on 'origin/work', but the upstream is gone.
   (use "git branch --unset-upstream" to fixup)
@@ -286,7 +286,7 @@ Your branch is based on 'origin/work', but the upstream is gone.
 从上面的执行结果可以看出来，git提示本地的note分支是基于origin/work分支，但是远程的work分支已经不存在了，可以用`git branch --set-upstream`命令修复。但是我们是要将本地的note分支上传到远程并将两者关联，所以需要再执行下面的命令。
 
 ```bash
-$ git push --set-upstream origin note
+> git push --set-upstream origin note
 Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/Dream4ever/getting-started-with-javascript.git
  * [new branch]      note -> note
@@ -308,7 +308,7 @@ Branch note set up to track remote branch note from origin.
 首先，要清除另一台电脑上无效的对应关系。
 
 ```bash
-$ git fetch -p
+> git fetch -p
 From https://github.com/Dream4ever/getting-started-with-javascript
  x [deleted]         (none)     -> origin/work
 ```
@@ -316,10 +316,10 @@ From https://github.com/Dream4ever/getting-started-with-javascript
 然后，把新的note分支同步下来就可以了。
 
 ```bash
-$ git fetch origin note
+> git fetch origin note
 From https://github.com/Dream4ever/getting-started-with-javascript
  * branch            note       -> FETCH_HEAD
-$ git checkout -b note origin/note
+> git checkout -b note origin/note
 Branch note set up to track remote branch note from origin.
 Switched to a new branch 'note'
 ```
