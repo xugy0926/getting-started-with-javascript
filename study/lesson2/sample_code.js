@@ -91,7 +91,7 @@ var xiaoming = {
   },
   like: {
     myLikeColorsList: myLikeColorsList,
-    myLikeFoods: myLikeColorsList
+    myLikeFoods: myLikeFoods
   },
   work: {
     locaitonBase: locaitonBase,
@@ -102,3 +102,35 @@ var xiaoming = {
 
 console.log(xiaoming);
 
+console.log('\n');
+console.log('#####################');
+console.log('我是语法糖')
+console.log('#####################');
+// 用上面定义的变量重新打包，并定义出xiaoming这边变量
+
+// 当对象里的变量命名和赋值过来的变量名字一样时，可以简写
+// 这种方式在js的代码中称为：语法糖(减轻编码时代码的输入量)。
+// 还有很多其他的语法糖。
+var xiaoming2 = {
+  name: name,
+  config: {
+    age,
+    height,
+    weight,
+    isMan,
+    student,
+    bloodType: 'A',
+    haveGirlFriend: true
+  },
+  like: {
+    myLikeColorsList,
+    myLikeFoods
+  },
+  work: {
+    locaitonBase,
+    company
+  },
+  myJavaScriptLessionInfoObj
+}
+
+console.log(xiaoming2);
