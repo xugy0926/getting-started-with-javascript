@@ -273,7 +273,7 @@ To https://github.com/Dream4ever/getting-started-with-javascript.git
 ```
 
 从上面的输出结果里可以看到，match分支和patch分支是正常的对应关系。但是本地的note分支理应对应着远程的work分支，但是远程的work分支又被删除了。所以，就需要把本地的note分支上传到远程，并让本地和远程的note分支相互对应。
-  
+
 我们先在本地切换至note分支。
 
 ```bash
