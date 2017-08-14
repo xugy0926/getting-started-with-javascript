@@ -59,7 +59,7 @@
         </div>
         <div class="panel-body">
           <li class="list-group-item" v-for="topic in topics">
-            <a href="{{ topic.url }}">
+            <a :href="topic.url">
               {{ topic.title }}
             </a>
           </li>
