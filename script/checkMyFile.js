@@ -51,6 +51,6 @@ fs.readdir(pathString, function(err, files) {
     console.log('哇喔...我找到了下面的文件');
     console.log(filterFiles);
   } else {
-    cosnole.log('很可惜，没有找到你的文件。');
+    console.log('很可惜，没有找到你的文件。');
   }
 });
