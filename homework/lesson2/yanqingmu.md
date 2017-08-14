@@ -1,4 +1,4 @@
-#编程中为什么会有丰富化的数据格式？
+# 编程中为什么会有丰富化的数据格式？
 
 *我的世界*：https://yanqingmu.github.io/my-world/
 
