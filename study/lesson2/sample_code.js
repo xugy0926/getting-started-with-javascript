@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /*
 *
 *  【运行步骤】
@@ -6,6 +8,7 @@
 *
 */
 
+>>>>>>> upstream/master
 //声明并定义变量
 
 var name = 'xiaoming';

@@ -73,7 +73,11 @@ Mac电脑自带Xcode开发软件，Xcode有一款工具叫Command Line Tools(Xco
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/xcode-select-install.png)
 
 如何判断xcode的Command Line Tools呢？
+<<<<<<< HEAD
+在终端再次输入`xcode-select --install`， 如果终端出现以下信息表明你已经安装完Command Line Tools了。
+=======
 在终端再次输入`xcode-select —install`， 如果终端出现以下信息表明你已经安装完Command Line Tools了。
+>>>>>>> upstream/master
 ```
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
@@ -121,8 +125,12 @@ Xcode的Command Line Tools安装成功后，Git也意味着安装成功了。
 (在终端操作)
 
 ```
+<<<<<<< HEAD
+// 创建一个工作用的文件夹，命名为my_project。这样做的目的是把你从git上下载下来的项目都规整到文件夹my_project里。
+=======
 // 创建一个工作用的文件夹，命名为my_project（你可以命名成你喜欢的名字，这不过是一个文件夹的名字而已）。
 // 这样做的目的是把你从git上下载下来的项目都规整到文件夹my_project里。
+>>>>>>> upstream/master
 > mkdir my_project
 
 // 进入文件夹my_project
@@ -247,6 +255,15 @@ Windows终端输入cd指令即可。
 
 如果前面的步骤你都走通了，说明你对于Git最基本的操作已经可以搞定了。
 
+<<<<<<< HEAD
+基本操作
+
+- 从Github上克隆一个项目到本地。 `git clone url`
+- 修改项目。
+- 添加修改到本地。`git add -A`
+- 提交修改到本地。`git commit -m "some logo"`
+- 推送提交到远程。 `git push origin master`
+=======
 #### 基本操作
 
 - 从Github上克隆一个项目仓库到本地项目仓库。 `git clone url`
@@ -254,6 +271,7 @@ Windows终端输入cd指令即可。
 - 添加修改到本地仓库的缓存区域。`git add -A`
 - 把缓存区域的修改提交到本地仓库。`git commit -m "some logo"`
 - 将本地仓库的提交推送到到远程仓库。 `git push origin master`
+>>>>>>> upstream/master
 
 善用Github对我们学习和工作非常有用，除了学习编程之外，还可以把Github当做存文档的远程硬盘，你不妨试试把自己的日记也放在Github上来存。
 
