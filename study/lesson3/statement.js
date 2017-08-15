@@ -48,14 +48,14 @@ for (var i = 0; i < myLikeColorsList.length; i++) {
   console.log(myLikeColorsList[i]);
 }
 
-// 等价于下面
+// 等价于下面(把初始化变量提前)
 
 var i = 0;
 for (; i < myLikeColorsList.length; i++) {
   console.log(myLikeColorsList[i]);
 }
 
-// 等价于下面
+// 等价于下面(把初始化变量提前，把计数器的自增放在循环体内)
 
 var i = 0;
 for (; i < myLikeColorsList.length;) {
@@ -63,7 +63,7 @@ for (; i < myLikeColorsList.length;) {
   i = i + 1; // i++;
 }
 
-// 初始化变量可以是多个，计数器变量更新也可以是多个。
+// 初始化变量可以是多个，计数器变量更新也可以是多个
 for (var i =0, j = 0; i < myLikeColorsList.length; i++, j++) {
   console.log('种类' + j);
   console.log(myLikeColorsList[i]);
