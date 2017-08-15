@@ -28,6 +28,8 @@ switch (age >= 18) {
   case false:
     console.log('未成年');
     break; // 退出循环
+  default:
+    console.log('not a human');
 }
 
 // 上面的switch代码是否存在逻辑问题？
@@ -62,7 +64,7 @@ for (; i < myLikeColorsList.length;) {
 }
 
 // 初始化变量可以是多个，计数器变量更新也可以是多个。
-for (var i =0, j = 0; i < myLikeColorsList.length /2 ; i++, j++) {
+for (var i =0, j = 0; i < myLikeColorsList.length; i++, j++) {
   console.log('种类' + j);
   console.log(myLikeColorsList[i]);
 }
