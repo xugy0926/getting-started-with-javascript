@@ -36,7 +36,7 @@ nvm全称是node version manager，中文意思是node版本管理。
 关掉终端，重新再打开终端。输入
 
 ```
-> nvm —version
+> nvm --version
 ```
 
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/nvm1.png)
