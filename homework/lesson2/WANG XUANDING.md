@@ -12,4 +12,4 @@
 ###2.数据格式
 
 
-[11]（https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request.md）
+[11](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request.md)
