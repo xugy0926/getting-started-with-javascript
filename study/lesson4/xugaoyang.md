@@ -1,4 +1,4 @@
-## lesson3 sample代码使用方式
+## lesson4 sample代码使用方式
 
 数据类型如何调用内置函数
 
