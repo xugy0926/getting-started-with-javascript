@@ -40,12 +40,12 @@ var build = function () {
     work: {
       locaitonBase,
       company
-    },
-    myJavaScriptLessionInfoObj
+    }
   }
   
   return xiaoming;
 }
 
 //执行build函数
-build();
+var result = build();
+console.log(result);

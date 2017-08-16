@@ -54,6 +54,10 @@ Git 是目前世界上被最广泛使用的现代软件版本管理系统。Gith
 
 [Pro git](http://iissnan.com/progit/)
 
+#### Git客户端下载
+
+可以在[Git官网](https://git-scm.com/downloads)下载最新版Git客户端，若无法下载，也可以从网盘中[点击下载](http://pan.baidu.com/s/1boMJj7x)，网盘中提供了mac、win32、win64不同系统的Git客户端。
+
 ## 第一次安装 Git
 
 #### Mac
