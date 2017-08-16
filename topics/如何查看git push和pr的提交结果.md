@@ -29,13 +29,16 @@
 注：上图红框中出现的描述，如：**添加图片**，是在使用*git commit -m* 命令时所添加的描述，此处也是我初学时抓住的关键字
 
 ### 二、将自己GitHub上的代码pull request到老师的GitHub上
-pull request这个操作是在GitHub上完成的，所以在GitHub上查看
+pull request这个操作是在GitHub上完成的，所以可以在自己的GitHub上或老师的GitHub上进行查看
 
-方法1：在GitHub上进行pull request后会直接出现结果，若出现下图即为成功
+方法1：在GitHub上进行pull request后，可以在自己的GitHub上进行查看，如下图
 
-![image.png](http://upload-images.jianshu.io/upload_images/7306283-d18843c0ca045055.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://upload-images.jianshu.io/upload_images/7306283-4be82d7a703e39b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-注：pull request后会自动跳转到老师的仓库中，并显示本次pull request的情况
+![image.png](http://upload-images.jianshu.io/upload_images/7306283-a46259ec50f755d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+注：**更新我的心里话**是我本次pull request的内容
+
 
 方法2：进入老师的GitHub上的项目，点击【Pull requests】，可以查看所有pull request的所有记录，如下图
 
