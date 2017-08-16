@@ -1,7 +1,7 @@
 # 第三课 作业
 
 ## 流程图
-！[浏览器与服务器交互过程的流程图](https://github.com/cloudyview/myPhoto/blob/master/cloudyview.png)
+![浏览器与服务器交互过程的流程图](https://github.com/cloudyview/myPhoto/blob/master/cloudyview.png)
 
 图片网址：https://github.com/cloudyview/myPhoto/blob/master/cloudyview.png
 
