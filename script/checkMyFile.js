@@ -1,4 +1,4 @@
-/*
+﻿/*
 *  这个文件可以查出作业里是否包含你的作业。
 *  在修改前你需要事先调整两个变量的值。
 *  pathString
@@ -18,7 +18,7 @@ const fs = require('fs');
 const pathString = '../homework/lesson1';
 
 // 定义要查询的关键字（不要包含".json"），可以修改你想要查询的关键字符串。
-const filterKeyString = 'xugaoyang';
+const filterKeyString = 'youshilei';
 
 // 调用fs的readdir函数读取所有文件
 fs.readdir(pathString, function(err, files) {
