@@ -1,4 +1,4 @@
-# 第二课作业 编程中为什么会有丰富化的数据格式？
+﻿# 第二课作业 编程中为什么会有丰富化的数据格式？
                      
 ## 一JS数据格式有哪些
 
@@ -12,4 +12,4 @@ js中有六种数据类型，包括五种基本数据类型（Number,String,Bool
 
 ## 三、我制作的静态网页
 
-我的静态网页[https://yousl.github.io/mypage/]
+[我的静态网页](https://yousl.github.io/mypage/)
