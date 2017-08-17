@@ -16,7 +16,7 @@ function prepare() {
 // 
 function cooking(foodsList) {
   console.log('今天要做这些菜' + foodsList);
-  console.log('打工告成');
+  console.log('大工告成，上菜');
 
   var feast = ['鸡蛋西红柿', '红烧肉', '红烧鱼'];
   return feast;
