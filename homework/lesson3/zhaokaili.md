@@ -1,0 +1,2 @@
+# 浏览器与服务器交互图
+![](http://thumbnail0.baidupcs.com/thumbnail/696fc6a4e69fee7a9a0ef412fed1f31c?fid=1773450957-250528-13753449075203&time=1502863200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-A9jZ2DqChnpHfG0tCLhs4HH0djY%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5279045975886140371&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
