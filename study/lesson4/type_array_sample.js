@@ -20,7 +20,7 @@ myLikeColorsList.push('red');
 console.log(myLikeColorsList);
 
 // 删除数组末尾的元素
-myLikeColorsList.push();
+myLikeColorsList.pop();
 console.log(myLikeColorsList);
 
 // 删除数组最前面的元素
