@@ -22,5 +22,6 @@
 
 拥有了不同的属性，我们就可以通过一系列方式将属性存储到对象上面，这样对象就等价于这些属性的集合。
 
+
 ####静态网页
 github pages: https://lichen19844.github.io/static-web-page/
