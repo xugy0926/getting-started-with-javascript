@@ -3,7 +3,7 @@
 * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
 
-var myLikeColorsList = ['blue', 'green', 'black', 'write'];
+var myLikeColorsList = ['blue', 'green', 'black', 'white'];
 
 console.log(myLikeColorsList);
 
@@ -20,7 +20,7 @@ myLikeColorsList.push('red');
 console.log(myLikeColorsList);
 
 // 删除数组末尾的元素
-myLikeColorsList.push();
+myLikeColorsList.pop();
 console.log(myLikeColorsList);
 
 // 删除数组最前面的元素
