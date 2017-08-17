@@ -1,3 +1,11 @@
+/*
+*
+*  【运行步骤】
+*  1. 终端进入到getting-started-with-javascript/study/lesson2
+*  2. > node sample_code.js
+*
+*/
+
 //声明并定义变量
 
 var name = 'xiaoming';
@@ -9,7 +17,7 @@ var xinshengUserName = 'xiaoming';
 var wechat_user_name = 'xiaoming';
 var locaitonBase = '北京';
 var company = locaitonBase + '新生大学';
-var myLikeColorsList = ['blue', 'green', 'black', 'write'];
+var myLikeColorsList = ['blue', 'green', 'black', 'white'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
 
 //声明并定义对象变量
@@ -83,7 +91,7 @@ var xiaoming = {
   },
   like: {
     myLikeColorsList: myLikeColorsList,
-    myLikeFoods: myLikeColorsList
+    myLikeFoods: myLikeFoods
   },
   work: {
     locaitonBase: locaitonBase,
@@ -94,3 +102,35 @@ var xiaoming = {
 
 console.log(xiaoming);
 
+console.log('\n');
+console.log('#####################');
+console.log('我是语法糖')
+console.log('#####################');
+// 用上面定义的变量重新打包，并定义出xiaoming这边变量
+
+// 当对象里的变量命名和赋值过来的变量名字一样时，可以简写
+// 这种方式在js的代码中称为：语法糖(减轻编码时代码的输入量)。
+// 还有很多其他的语法糖。
+var xiaoming2 = {
+  name: name,
+  config: {
+    age,
+    height,
+    weight,
+    isMan,
+    student,
+    bloodType: 'A',
+    haveGirlFriend: true
+  },
+  like: {
+    myLikeColorsList,
+    myLikeFoods
+  },
+  work: {
+    locaitonBase,
+    company
+  },
+  myJavaScriptLessionInfoObj
+}
+
+console.log(xiaoming2);
