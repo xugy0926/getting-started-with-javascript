@@ -17,6 +17,7 @@
 #### step 2
 
 ```
+// 注意，如果你之前做过更新，这次是来做第二次更新，这一步不用再做。
 > git remote add upstream xxxx
 ```
 
