@@ -20,12 +20,11 @@ console.log('\n---- 删除小明的年龄 -------');
 delete config.age
 console.log(config);
 
-// 定义了一个函数变量，赋值了一个函数表达式
+// 定义了一个变量run，赋值了一个函数表达式。run变成了一个函数变量。
 config.run = function () {
   console.log('\n###### function ######');
   console.log('i am running');
 }
-
 
 // 执行对象config的函数run
 config.run();
