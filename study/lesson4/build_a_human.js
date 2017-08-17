@@ -22,7 +22,7 @@ var company = locaitonBase + '新生大学';
 var myLikeColorsList = ['blue', 'green', 'black', 'write'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
 
-// 定义一个函数变量build（表达式函数定义法）
+// 定义一个函数变量buildPerson（表达式函数定义法）
 var buildPerson = function () {
   var xiaoming = {
     name: name,
