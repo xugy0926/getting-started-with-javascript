@@ -3,7 +3,7 @@
 * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
 
-var myLikeColorsList = ['blue', 'green', 'black', 'write'];
+var myLikeColorsList = ['blue', 'green', 'black', 'white'];
 
 console.log(myLikeColorsList);
 
