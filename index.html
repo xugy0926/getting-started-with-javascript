@@ -30,41 +30,76 @@
     </div>
   </div>
   <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-
+    <div class="col-md-12">
+      <div class="bs-callout bs-callout-danger">
+        <h4> 提问技巧 </h4>
+        <p>
+          1. 先去新大app查找。<br/>
+          2. 再去getting-started-with-javascript的<a href="https://github.com/xugy0926/getting-started-with-javascript/issues">issues</a>检索相关问题，找不到相关问题可以发起一个问题，老师会回答。<br/>
+          3. 最后还解决不了？或你的问题觉得很紧急？在微信群里问，问之前把问题整理好，尽量提供详细信息。<br/>
+          4. 如果再微信群不好意思问，还给你准备了一个幼儿园班。<br/>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
       <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://www.xinshengdaxue.com/lessons/details?course_id=40">
-            <img src="https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6">
-            <div class="caption">
-              <p>课程介绍</p>
-            </div>
-          </a>
-        </div>
+        <a class="thumbnail" href="https://www.xinshengdaxue.com/lessons/details?course_id=40">
+          <img src="https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6">
+          <div class="caption">
+            <p>课程介绍</p>
+          </div>
+        </a>
       </div>
 
       <div style="margin-bottom: 15px">
-        <a type="button" class="btn btn-default btn-small" href="https://github.com/xugy0926/getting-started-with-javascript">
+        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/getting-started-with-javascript">
           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> getting-started-with-javascript
         </a>
-        <a type="button" class="btn btn-default btn-small" href="https://github.com/xugy0926/words-from-the-heart">
+        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/words-from-the-heart">
           <span class="glyphicon glyphicon-heart" aria-hidden="true">
           </span> words-from-the-heart
         </a>
       </div>
-
+    </div>
+    <div class="col-md-8">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">文档</h3>
+          <h3 class="panel-title">GIT & GITHUB</h3>
         </div>
         <div class="panel-body">
-          <li class="list-group-item" v-for="topic in topics">
-            <a :href="topic.url">
-              {{ topic.title }}
+          <li class="list-group-item" v-for="item in gitTopics">
+            <a :href="item.url">
+              {{ item.title }}
             </a>
           </li>
         </div>
       </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">PPT</h3>
+        </div>
+        <div class="panel-body">
+          <li class="list-group-item" v-for="item in ppt">
+            <a :href="item.url">
+              {{ item.title }}
+            </a>
+          </li>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">课程的技术文档</h3>
+          </div>
+          <div class="panel-body">
+            <li class="list-group-item" v-for="item in topics">
+              <a :href="item.url">
+                {{ item.title }}
+              </a>
+            </li>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -75,7 +110,13 @@
 </html>
 <script>
 
-var topics = [{
+var gitTopics = [{
+    title: 'MAC Terminal常用指令',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md'
+  }, {
+    title: 'Win CMD常用指令',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md'
+  }, {
     title: '【课前预习】第一次使用Git',
     url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8Git.md'
   }, {
@@ -87,27 +128,9 @@ var topics = [{
   }, {
     title: '如何查看自己的提交状态？',
     url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md'
-  },{
-    title: '第一次使用JSON',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8JSON.md'
-  }, {
-    title: 'MAC Terminal常用指令',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md'
-  }, {
-    title: 'Win CMD常用指令',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md'
-  }, {
-    title: '第一节课PPT',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/tree/master/ppt'
-  }, {
-    title: '【课前准备】安装NVM',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%89%E8%A3%85nvm.md'
   }, {
     title: '如何更新从主项目fork过来的项目@右张丽娜同学贡献',
     url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E4%BB%8E%E4%B8%BB%E9%A1%B9%E7%9B%AE%E6%9B%B4%E6%96%B0fork%E7%9A%84%E9%A1%B9%E7%9B%AE.md'
-  }, {
-    title: '【第二节知识点】定义变量',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F.md'
   }, {
     title: 'Git实战笔记@由何伟同学贡献',
     url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0.md'
@@ -116,6 +139,36 @@ var topics = [{
     url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%20push%E5%92%8Cpr%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md'
   }];
 
+var ppt = [{
+    title: '第一节课PPT',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%80%E8%8A%82.pdf'
+  },
+  {
+    title: '第二节课PPT',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%BA%8C%E8%8A%82.pdf'
+  },
+  {
+    title: '第三节课PPT',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%89%E8%8A%82.pdf'
+  }];
+
+var topics = [{
+    title: '第一次使用JSON',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8JSON.md'
+  }, {
+    title: '【课前准备】安装NVM',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%89%E8%A3%85nvm.md'
+  }, {
+    title: '【第二节知识点】定义变量',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F.md'
+  }, {
+    title: '【第三节知识点】js编程重要语句',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/js%E9%87%8D%E8%A6%81%E8%AF%AD%E5%8F%A5.md'
+  }, {
+    title: '【第三节知识点】变量命名技巧',
+    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%AE%80%E6%98%8E%E6%8A%80%E5%B7%A7.md'
+  }];
+  
 var app = new Vue({
   el: '#app',
   data: {
@@ -123,7 +176,9 @@ var app = new Vue({
     teacher: '徐高阳',
     startTime: '2017/08/08',
     endTime: '2017/09/04',
-    topics: topics
+    gitTopics,
+    ppt,
+    topics
   }
 })
 </script>
