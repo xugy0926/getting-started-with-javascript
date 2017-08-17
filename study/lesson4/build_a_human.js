@@ -48,6 +48,6 @@ var buildPerson = function () {
   return xiaoming;
 }
 
-//调用(执行)build函数，根据基本信息构建
+//调用(执行)buildPerson函数，根据基本信息构建
 var personObj = buildPerson();
 console.log(personObj);
