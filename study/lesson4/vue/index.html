@@ -3,12 +3,14 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>我的信息</title>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-<div>
+<div id="app">
   <div class="main-header">
     <div class="container">
       <h1>我的个人信息</h1>
+      <h4>{{personObj.name}}</h4>
     </div>
   </div>
   <div>
@@ -94,7 +96,7 @@ console.log('我是分界线')
 console.log('#####################');
 // 用上面定义的变量重新打包，并定义出xiaoming这边变量
 
-var xiaoming = {
+var personObj = {
   name: name,
   config: {
     age: age,
@@ -114,5 +116,13 @@ var xiaoming = {
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
 }
 
-console.log(xiaoming);
+console.log(personObj);
+
+// 初始化Vue
+var app2 = new Vue({
+  el: '#app',
+  data: {
+    personObj: personObj
+  }
+});
 </script>
