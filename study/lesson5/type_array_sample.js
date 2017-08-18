@@ -9,7 +9,7 @@ console.log(myLikeColorsList);
 
 // 遍历数据
 // “遍历”这个在编程中经常用到，翻译成白话就是挨个数组元素查一遍
-// 就跟军训排队时，教官要我们挨个报数一个意思。
+// 就跟军训排队时教官要我们挨个报数一个意思。
 
 for (var i = 0; i < myLikeColorsList.length; i ++) {
   console.log(myLikeColorsList[i]);

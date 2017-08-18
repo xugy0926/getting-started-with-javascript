@@ -17,7 +17,7 @@ var xinshengUserName = 'xiaoming';
 var wechat_user_name = 'xiaoming';
 var locaitonBase = '北京';
 var company = locaitonBase + '新生大学';
-var myLikeColorsList = ['blue', 'green', 'black', 'write'];
+var myLikeColorsList = ['blue', 'green', 'black', 'white'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
 
 //声明并定义对象变量
