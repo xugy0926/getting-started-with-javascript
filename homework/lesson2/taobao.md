@@ -1,4 +1,4 @@
-# lesson2_theSecondHomework_variableAndValue
+﻿# lesson2_theSecondHomework_variableAndValue
 
 There is little difference between most of classmates and me. My undergraduate major is Electric Enginnering and Computer Science with full English teaching. The instructor of this Javascript lesson, Mr, XU, hopes that we can write the article to sharing the understanding from each lessons with classmates. To be honest, I should keep this one in Chinese but I want to practice my English in this way. I know I will make lots of mistakes but I will try my best. I will make commit to explian something which is important or I do not explian clear.
 
@@ -51,3 +51,7 @@ Addtionally,
 in Javascript is meaning make the empty line, and change to the next line.
 
 In conclusion, in lesson2, the goal of it is understanding variables and value, the new pint I got from this lecture is the purpose of code is deal with date then output the result, and I need to use the best way to slove my problem.
+
+---
+
+additional homework: https://tiandimeihua.github.io/xinshengdaxue_javascript/
