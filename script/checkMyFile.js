@@ -13,8 +13,6 @@
 
 // 引入fs模块
 const fs = require('fs');
-// 引入fs-extra模块
-const fse = require('fs-extra');
 
 // 定义要查询的目标文件夹。如果你想查lesson2的内容，就修改下面的变量。
 const pathString = '../homework/lesson1';
@@ -51,6 +49,6 @@ fs.readdir(pathString, function(err, files) {
     console.log('哇喔...我找到了下面的文件');
     console.log(filterFiles);
   } else {
-    cosnole.log('很可惜，没有找到你的文件。');
+    console.log('很可惜，没有找到你的文件。');
   }
 });
