@@ -1,10 +1,10 @@
 .main-header {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 24px;
   text-align: left;
-  background-color: #6f5499;
+  background-color: #33495f;
 }
 
 .xingda {
@@ -50,6 +50,22 @@
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.bs-callout-danger {
+  border-left-color: #ce4844;
+}
+
+.bs-callout-danger h4 {
+  color: #ce4844;
 }
 
 .footer {
