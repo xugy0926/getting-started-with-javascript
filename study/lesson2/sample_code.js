@@ -26,10 +26,10 @@ var myJavaScriptLessionInfoObj = {
   teacherWeChat: wechat_user_name,
   title: 'JavaScript编程入门',
   beginTime: '2018/8/8',
-  endTime: '2018/9/4',
+  endTime: '2018/9/7',
   boysStudent: 417,
   girlsStudent: 119,
-  lessionTarget: '帮助更多小白学习JavaScript',
+  lessonTarget: '帮助更多小白学习JavaScript',
   githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
 };
 
