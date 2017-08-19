@@ -1,4 +1,4 @@
-## 使用说明
+﻿## 使用说明
 
 编程小白在进行操作之前请注意三点。
 
@@ -239,7 +239,7 @@ Windows终端输入cd指令即可。
 > git config --global user.email "you@example.com (mailto:you@example.com)"
 
 // 设置你注册的github的用户名
-> git config —global user.name "your name"
+> git config --global user.name "your name"
 ```
 
 设置完上面后，再进行`git push origin master`。
