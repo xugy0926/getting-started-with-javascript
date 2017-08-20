@@ -58,8 +58,8 @@ console.log('我总共喜欢 ' + myLikeFoods.length + ' 种食物');
 
 // for 循环
 for (var i = 0; i < myLikeFoods.length; i++) {
-  console.log(myLikeFoods[i]);
-}
+  console.log(myLikeFoods[i])
+};localStorage
 
 console.log('--------------------');
 console.log('\n');
@@ -68,7 +68,7 @@ console.log(myJavaScriptLessionInfoObj);
 
 console.log('\n');
 console.log('#####################');
-console.log('我是分界线')
+console.log('我是分界线');
 console.log('#####################');
 // 用上面定义的变量重新打包，并定义出xiaoming这边变量
 
@@ -90,7 +90,7 @@ var xiaoming = {
     company: company
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming);
 
