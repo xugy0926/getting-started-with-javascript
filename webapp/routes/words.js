@@ -7,7 +7,7 @@ var router = express.Router();
 
 /* GET words listing. */
 router.get('/', function(req, res, next) {
-  jsonfile.readFile(config.wordsPath + 'words.json', function (err, words) {
+  jsonfile.readFile(config.wordsFilePath, function (err, words) {
     if (err) {
       next();
     } else {

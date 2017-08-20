@@ -9,7 +9,7 @@ var _ = require('lodash');
 var index = require('./routes/index');
 var words = require('./routes/words');
 var homework = require('./routes/homework');
-var data = require('./routes/data');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -35,7 +35,7 @@ _.extend(app.locals, {
 app.use('/', index);
 app.use('/words', words);
 app.use('/homework', homework);
-app.use('/data', data);
+app.use('/api', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

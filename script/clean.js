@@ -1,4 +1,4 @@
-import { cleanDir } from './lib/fs';
+import { cleanDir } from './fs';
 
 function clean() {
   return Promise.all([

@@ -7,16 +7,16 @@ var config = require('../config');
 var router = express.Router();
 var catelog = require('../public/content/catelog');
 
-router.get('/catelog', function(req, res, next) {
+router.get('/catelog/list', function(req, res, next) {
   res.json({result: {code: 1, catelog}});
 });
 
-router.post('/catelog', function(req, res, next) {
+router.post('/catelog/list', function(req, res, next) {
   res.json({result: {code: 1, catelog}});
 });
 
-router.get('/words', function(req, res, next) {
-  jsonfile.readFile(config.wordsPath + 'words.json', function (err, words) {
+router.get('/words/list', function(req, res, next) {
+  jsonfile.readFile(config.wordsFilePath, function (err, words) {
     if (err) {
       res.json({result: {code: 0, message: '获取数据失败'}});
       return;
@@ -26,13 +26,28 @@ router.get('/words', function(req, res, next) {
   });
 });
 
-router.post('/words', function(req, res, next) {
-  jsonfile.readFile(config.wordsPath + 'words.json', function (err, words) {
+router.post('/words/list', function(req, res, next) {
+  jsonfile.readFile(config.wordsFilePath, function (err, words) {
     if (err) {
       res.json({result: {code: 0, message: '获取数据失败'}});
       return;
     } else {
       res.json({result: {code: 1, words}});
+    }
+  });
+});
+
+router.post('/words/update', function(req, res, next) {
+  const words = req.body.words;
+  
+  fs.unlinkSync(config.wordsFilePath);
+  
+  jsonfile.writeFile(config.wordsFilePath, words, {spaces: 2}, function(err) {
+    if (err) {
+      res.json({result: {code: 0, message: '更新失败'}});
+      return;
+    } else {
+      res.json({result: {code: 1, message: '更新成功'}});
     }
   });
 });

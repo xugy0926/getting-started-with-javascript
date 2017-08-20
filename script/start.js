@@ -3,7 +3,7 @@ import path from 'path';
 import run from './run';
 import clean from './clean';
 import scan from './scan';
-import { writeFile, copyFile } from './lib/fs';
+import { writeFile, copyFile } from './fs';
 import jsonfile from 'jsonfile';
 
 const lessonPath = '../homework/';
