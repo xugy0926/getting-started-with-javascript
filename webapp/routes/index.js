@@ -1,15 +1,35 @@
+var fs = require('fs');
+var path = require('path');
+var jsonfile = require('jsonfile');
 var express = require('express');
-var router = express.Router();
+var config = require('../config');
 
-var catelog = require('../content/catelog');
+var router = express.Router();
+var catelog = require('../public/content/catelog');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 
-    title: '小白学习JS', 
-    gitTopicsList: catelog.gitTopicsList, 
-    pptList: catelog.pptList, 
-    topicsList: catelog.topicsList });
+
+  fs.readdir(config.homeworkPath, function(err, files) {
+    if (err) {
+      next();
+    } else {
+      var homeworkInfoList = [];
+      files.forEach((item, index) => {
+        let file = jsonfile.readFileSync(config.homeworkPath + 'lesson' + (index + 1) + '.json');
+        homeworkInfoList.push({
+            url: 'homework/' + (index + 1),
+            count: file.length
+          });
+      });
+      res.render('index', {
+        homeworkInfoList,
+        gitTopicsList: catelog.gitTopicsList, 
+        pptList: catelog.pptList, 
+        topicsList: catelog.topicsList });
+    }
+  });
+
 });
 
 module.exports = router;

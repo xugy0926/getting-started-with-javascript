@@ -4,9 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var _ = require('lodash');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var words = require('./routes/words');
+var homework = require('./routes/homework');
+var data = require('./routes/data');
 
 var app = express();
 
@@ -22,8 +25,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+_.extend(app.locals, {
+  title: 'JavaScript编程入门',
+  teacher: '徐高阳',
+  startTime: '2017/08/08',
+  endTime: '2017/09/04',
+});
+
 app.use('/', index);
-app.use('/users', users);
+app.use('/words', words);
+app.use('/homework', homework);
+app.use('/data', data);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
