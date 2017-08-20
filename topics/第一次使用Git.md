@@ -1,4 +1,4 @@
-## 使用说明
+﻿## 使用说明
 
 编程小白在进行操作之前请注意三点。
 
@@ -53,6 +53,10 @@ Git 是目前世界上被最广泛使用的现代软件版本管理系统。Gith
 [git简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)，这个教程很简单，快速帮你了解git，13页PPT形式的内容就说明了git最基本的操作精华。
 
 [Pro git](http://iissnan.com/progit/)
+
+#### Git客户端下载
+
+可以在[Git官网](https://git-scm.com/downloads)下载最新版Git客户端，若无法下载，也可以从网盘中[点击下载](http://pan.baidu.com/s/1boMJj7x)，网盘中提供了mac、win32、win64不同系统的Git客户端。
 
 ## 第一次安装 Git
 
@@ -192,6 +196,9 @@ Windows终端输入cd指令即可。
 
 // 查看文件的变化状态
 > git status
+
+// 通过git status执行后，在终端会显示你改了多少文件，改动的代码会显示为红色。（改动包涵：增加文件、删除文件、修改文件）
+// 如果红色的文件有不是要改的文件而被你改动了，这时你就要注意咯。参考[](https://github.com/xugy0926/getting-started-with-javascript/issues/150)
 ```
 
 #### 4. 第一次把改动在本地做一次提交
@@ -199,8 +206,12 @@ Windows终端输入cd指令即可。
 (在终端操作)
 
 ```
-// 把修改过的文件做全部的添加
+// 【注意】如果你进行git status并确保所有改动文件都是你的改动就用这个执行，否则不要执行这一步。
+// 把修改过的文件做全部的添加，添加到哪？添加到你本地仓库的缓冲区域。
 > git add -A
+
+// 【注意】如果你改动的文件有别人的文件，而你又不想恢复那个文件。那么你可以直接了当地只添加你的改动文件即可。
+> git add your_file
 
 // 把被添加的文件做本地提交
 > git commit -m "代码提交的日志信息"
@@ -228,7 +239,7 @@ Windows终端输入cd指令即可。
 > git config --global user.email "you@example.com (mailto:you@example.com)"
 
 // 设置你注册的github的用户名
-> git config —global user.name "your name"
+> git config --global user.name "your name"
 ```
 
 设置完上面后，再进行`git push origin master`。
