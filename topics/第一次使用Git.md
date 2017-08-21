@@ -235,7 +235,7 @@ Windows终端输入cd指令即可。
 ![](https://raw.githubusercontent.com/wiki/xugy0926/getting-started-with-javascript/password-request.png)
 
 ```
-// 设置你注册的github的邮箱
+// 设置你注册的github的邮箱  
 > git config --global user.email "you@example.com (mailto:you@example.com)"
 
 // 设置你注册的github的用户名
