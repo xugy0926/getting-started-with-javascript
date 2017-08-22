@@ -70,6 +70,7 @@ for (var i =0, j = 0; i < myLikeColorsList.length; i++, j++) {
 }
 
 // 创新的轮询数组的技巧
+// 两头同时轮询，轮询时间只用到了一半。
 for (var i =0, j = myLikeColorsList.length - 1; i < myLikeColorsList.length /2 ; i++, j--) {
   console.log(myLikeColorsList[i]);
   console.log(myLikeColorsList[j]);
@@ -79,10 +80,11 @@ console.log('\n');
 
 /*
 * 循环语句 -- while
+* 只要满足while的条件，就会循环执行循环体的代码
 */
 
 var i = 0;
-while ( i < myLikeColorsList.length) {
+while (i < myLikeColorsList.length) {
   console.log(myLikeColorsList[i]);
   i = i + 1; // i++;
 }
