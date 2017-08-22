@@ -14,7 +14,6 @@ function checkFlightSchedule(callback) {
 }
 
 //---------------------------------------
-
 function callback(startTime) {
   console.log(startTime);
 }

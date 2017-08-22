@@ -17,7 +17,6 @@ function checkFlightSchedule(callback) {
 }
 
 //---------------------------------------
-
 function callback(startTime) {
   console.log('通过反馈通道获得了信息');
   console.log(startTime);
@@ -25,11 +24,3 @@ function callback(startTime) {
 
 // 执行查询函数
 checkFlightSchedule(callback);
-
-
-//----------------------------------------
-// 匿名函数方式
-checkFlightSchedule(function (startTime) {
-  console.log('通过反馈通道获得了信息');
-  console.log(startTime);
-});

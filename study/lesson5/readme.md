@@ -2,6 +2,8 @@
 
 #### 数据类型的使用
 
+// 数据格式的基本操作。内附各种数据格式的api链接。
+
 1. type_array_sample.js
 2. type_boolean_sample.js
 3. type_number_sample.js
