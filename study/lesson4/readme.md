@@ -17,3 +17,8 @@
 #### 创建对象的注意点
 
 1. object.js
+
+
+#### 用vue构建动态数据
+
+1. vue/index.html
