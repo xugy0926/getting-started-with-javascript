@@ -10,18 +10,18 @@ function checkFlightSchedule(callback) {
 
   // 模拟构建航班的时间信息
   var scheduleInfo = {
-    start: '8/23 8:00',
-    end: '8/23 10:30',
+    start: '8/24 8:00',
+    end: '8/24 10:30',
     from: 'beijing',
     to: 'hangzhou'
   };
 
-  callback(scheduleInfo.start);
+  callback(scheduleInfo.end);
 }
 
 //---------------------------------------
-function callback(startTime) {
-  console.log(startTime);
+function callback(endTime) {
+  console.log(endTime);
 }
 
 // 调用函数checkFlightSchedule，并塞一个回调函数以获取结果
