@@ -1,3 +1,5 @@
+## 分析代码
+
 ```sample.js
 function output(name){
 	console.log(name);
@@ -9,9 +11,9 @@ output(name);
 
 上面的代码，其中：
 
-第2行的 name 是 定义output()这个 function 的参数。
-第6行的 name 是 一个独立的变量，赋其值为一个字符串"Hello,JS"。
-第7行的 name 是 把第6行的变量 name 作为 output()这个函数的参数，并执行函数。
+第1行的 name 是 定义output()这个 function 的参数。
+第5行的 name 是 一个独立的变量，赋其值为一个字符串"Hello,JS"。
+第6行的 name 是 把第6行的变量 name 作为 output()这个函数的参数，并执行函数。
 
 ## 观察代码
 
