@@ -5,7 +5,7 @@
 
 【作业内容】
 1. 阅读study/lesson5的sample代码
-2. 下面代码中
+2. 下面代码中，第1行、第4行、第5行的name变量都有什么差异？
 
 ```
 1. function output(name) {
@@ -22,3 +22,5 @@
 https://github.com/xugy0926/getting-started-with-javascript
 
 3. 提交homework/lesson5目录下。
+4. 以自己的名字命名md文件提交。
+5. 
