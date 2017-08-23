@@ -48,4 +48,4 @@ var config2 = {
 }
 
 // 执行对象config2的函数run
-config.run();
+config2.run();
