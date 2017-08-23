@@ -1,10 +1,9 @@
 //声明并定义变量
-
-var name = 'xugaoyang';
-var age = 18;
+var name = 'xiaoming';
 var height = 170, weight = 130.1;
-var xinshengUserName = 'xugaoyang';
-var wechat_user_name = 'xugy0926';
+var age = 18;
+var xinshengUserName = 'xiaoming';
+var wechat_user_name = 'xiaoming';
 var isMan = true;
 var student = false;
 var locaitonBase = '北京';
@@ -25,6 +24,7 @@ var myJavaScriptLessionInfoObj = {
   githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
 };
 
+
 /*
 * 输出个人信息
 * 输出个人信息时，必要信息要求加辅助提示语
@@ -35,7 +35,7 @@ console.log(name);
 
 console.log("年龄: " + age);
 console.log('身高 = ' + height + ', 体重 = ' + weight);
-console.log('地点: ' + location);
+console.log('地点: ' + locaitonBase);
 console.log('公司: ' + company);
 
 console.log('\n');
