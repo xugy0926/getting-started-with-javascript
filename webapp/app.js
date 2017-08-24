@@ -29,7 +29,7 @@ _.extend(app.locals, {
   title: 'JavaScript编程入门',
   teacher: '徐高阳',
   startTime: '2017/08/08',
-  endTime: '2017/09/04',
+  endTime: '2017/09/10',
 });
 
 app.use('/', index);
