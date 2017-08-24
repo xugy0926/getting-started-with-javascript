@@ -42,8 +42,7 @@ var buildPerson = function () {
     work: {
       locaitonBase,
       company
-    }
-  }
+    }}
   
   return xiaoming;
 }

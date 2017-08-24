@@ -18,7 +18,7 @@ const fs = require('fs');
 const pathString = '../homework/lesson1';
 
 // 定义要查询的关键字（不要包含".json"），可以修改你想要查询的关键字符串。
-const filterKeyString = 'xugaoyang';
+const filterKeyString = 'wufan';
 
 // 调用fs的readdir函数读取所有文件
 fs.readdir(pathString, function(err, files) {
