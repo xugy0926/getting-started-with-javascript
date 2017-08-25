@@ -7,6 +7,16 @@ var config = require('../config');
 var router = express.Router();
 var catelog = require('../public/content/catelog');
 
+route.post('/course/1/info', function(req, res, next) {
+  res.json({result: {code: 1, courseInfo: {
+    title: 'JavaScript编程入门',
+    teacher: '徐高阳',
+    teacherAvatar: 'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
+    startTime: '2017/08/08',
+    endTime: '2017/09/10',
+  });
+});
+
 // catelog
 router.get('/catelog/list', function(req, res, next) {
   res.json({result: {code: 1, catelog}});

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>JavaScript编程入门</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='./public/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' />
     <link rel="stylesheet" href="./public/style.css">
     <script src="./public/jquery-3.2.1.min.js"></script>
     <script src="./public/vue.min.js"></script>
@@ -13,14 +13,14 @@
 <div id="app">
   <div class="main-header">
     <div class="container">
-      <h1 class="title">{{ title }}</h1>
+      <h1 class="title">{{ courseInfo.title }}</h1>
       <div>
         <img class="avatar"
-          src="https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg">
+          src="{{ courseInfo.teacherAvatar }}">
         </img>
         <div class="teacher-info-pannel">
-          <p class="teacher-info-item">讲师: <span>{{ teacher }}</span></p>
-          <p class="teacher-info-item">授课时间: <span>{{ startTime }} - {{ endTime }}</span></p>
+          <p class="teacher-info-item">讲师: <span>{{ courseInfo.teacher }}</span></p>
+          <p class="teacher-info-item">授课时间: <span>{{ courseInfo.startTime }} - {{ courseInfo.endTime }}</span></p>
         </div>
       </div>
     </div>
@@ -113,24 +113,38 @@
 var app = new Vue({
   el: '#app',
   data: {
-    title: 'JavaScript编程入门',
-    teacher: '徐高阳',
-    startTime: '2017/08/08',
-    endTime: '2017/09/04',
+    courseInfo: {},
     gitTopics: [],
     ppt: [],
     topics: []
   },
   methods: {
+    getCourseInfo() {
+      var that = this;
+      $.post('https://js.xinshengdaxue.com/api/course/1/info', function(data) {
+        var result = data.result;
+
+        if (result.code === 1) {
+          console.log(result);
+          that.courseInfo = result.courseInfo;
+        } else {
+          alert('fetch data error.');
+        }
+      });
+    },
     getTopics() {
       var that = this;
-      $.get('https://js.xinshengdaxue.com/api/catelog/list', function(err, result) {
-        if (err) {
-          alert(err);
-          return;
-        }
+      $.post('https://js.xinshengdaxue.com/api/catelog/list', function(data) {
+        var result = data.result;
 
-        console.log(result);
+        if (result.code === 1) {
+          console.log(result);
+          that.gitTopics = result.catelog.gitTopicsList;
+          that.ppt = result.catelog.pptList;
+          that.topics = result.catelog.topicsList;
+        } else {
+          alert('fetch data error.');
+        }
       });
     }
   }
