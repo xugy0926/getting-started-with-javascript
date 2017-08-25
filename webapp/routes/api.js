@@ -13,8 +13,8 @@ route.post('/course/1/info', function(req, res, next) {
     teacher: '徐高阳',
     teacherAvatar: 'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
     startTime: '2017/08/08',
-    endTime: '2017/09/10',
-  });
+    endTime: '2017/09/10'
+  }}});
 });
 
 // catelog
