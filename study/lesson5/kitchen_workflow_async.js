@@ -27,7 +27,6 @@ function cooking(foodsList, callback) {
     console.log('大工告成，上菜');
 
     var feast = ['鸡蛋西红柿', '红烧肉', '红烧鱼'];
-    callback(feast);
   }, 5000);
 }
 
