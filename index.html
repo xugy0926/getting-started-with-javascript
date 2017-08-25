@@ -16,7 +16,7 @@
       <h1 class="title">{{ courseInfo.title }}</h1>
       <div>
         <img class="avatar"
-          src="{{ courseInfo.teacherAvatar }}">
+          v-bind:src="courseInfo.teacherAvatar">
         </img>
         <div class="teacher-info-pannel">
           <p class="teacher-info-item">讲师: <span>{{ courseInfo.teacher }}</span></p>
@@ -125,7 +125,6 @@ var app = new Vue({
         var result = data.result;
 
         if (result.code === 1) {
-          console.log(result);
           that.courseInfo = result.courseInfo;
         } else {
           alert('fetch data error.');
@@ -149,5 +148,6 @@ var app = new Vue({
   }
 })
 
+app.getCourseInfo();
 app.getTopics();
 </script>
