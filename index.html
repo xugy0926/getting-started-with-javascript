@@ -138,7 +138,6 @@ var app = new Vue({
         var result = data.result;
 
         if (result.code === 1) {
-          console.log(result);
           that.gitTopics = result.catelog.gitTopicsList;
           that.ppt = result.catelog.pptList;
           that.topics = result.catelog.topicsList;
