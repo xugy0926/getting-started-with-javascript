@@ -1,5 +1,5 @@
 // 引入 fs module
-var fs = require('fs');
+var file_sys = require('fs');
 
 // 定义扫描的目标文件夹所在路径
 var scan_dir_path_string = "../words-from-the-heart";
@@ -11,12 +11,14 @@ var write_file_path_string = "../achivement.md";
 function callback1(err, files){
 	if (err) {
 		console.log("scanning failed\n" + err);  // 如果扫描出现错误，显示扫描错误并打印错误
-	} else if (files.length === 0) {
+	} 
+
+	if (files.length === 0) {
 		console.log("oops! no file exist");  // 如果扫描结果中无内容，打印无内容
 	} else {
 		console.log(files);  // 扫描结果有内容，打印内容
 		var file_content_string = files.join("\n");  // 内容整理成字符串，方便一会儿写入文件
-		fs.writeFile(write_file_path_string, file_content_string, callback2);  // 写入指定文件
+		file_sys.writeFile(write_file_path_string, file_content_string, callback2);  // 写入指定文件
 	}
 }
 
@@ -30,6 +32,6 @@ function callback2(err) {
 }
 
 // 调用 fs 的 readdir函数来扫描指定文件夹，并完成写入工作
-fs.readdir(scan_dir_path_string, callback1);
+file_sys.readdir(scan_dir_path_string, callback1);
 
 
