@@ -12,7 +12,8 @@
  之后再次调用output函数时，我们还可以给name1赋予不同的值name4、name5...name_x，name1的数据类型也可能随之改变，当然函数的运行结果也会跟着改变。
 
 # 一个疑问
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fiw3dc9v1dj31kw0w14qp.jpg)
+
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fiw3x4c7zoj30rs0fndsz.jpg)
 图1——方便理解问题的截图
 
 ![](http://ww2.sinaimg.cn/large/006tKfTcgy1fiw39xr971j30m805s0tz.jpg)
