@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -12,6 +13,9 @@ var homework = require('./routes/homework');
 var api = require('./routes/api');
 
 var app = express();
+
+// set cors
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,7 +33,7 @@ _.extend(app.locals, {
   title: 'JavaScript编程入门',
   teacher: '徐高阳',
   startTime: '2017/08/08',
-  endTime: '2017/09/04',
+  endTime: '2017/09/10',
 });
 
 app.use('/', index);
