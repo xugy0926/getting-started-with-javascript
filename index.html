@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <title>JavaScript编程入门</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='./public/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' />
     <link rel="stylesheet" href="./public/style.css">
-    <script src="https://unpkg.com/vue"></script>
+    <script src="./public/jquery-3.2.1.min.js"></script>
+    <script src="./public/vue.min.js"></script>
 </head>
 <body>
 <div id="app">
   <div class="main-header">
     <div class="container">
-      <h1 class="title">{{ title }}</h1>
+      <h1 class="title">{{ courseInfo.title }}</h1>
       <div>
         <img class="avatar"
-          src="https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg">
+          v-bind:src="courseInfo.teacherAvatar">
         </img>
         <div class="teacher-info-pannel">
-          <p class="teacher-info-item">讲师: <span>{{ teacher }}</span></p>
-          <p class="teacher-info-item">授课时间: <span>{{ startTime }} - {{ endTime }}</span></p>
+          <p class="teacher-info-item">讲师: <span>{{ courseInfo.teacher }}</span></p>
+          <p class="teacher-info-item">授课时间: <span>{{ courseInfo.startTime }} - {{ courseInfo.endTime }}</span></p>
         </div>
       </div>
     </div>
@@ -109,76 +110,44 @@
 </body>
 </html>
 <script>
-
-var gitTopics = [{
-    title: 'MAC Terminal常用指令',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md'
-  }, {
-    title: 'Win CMD常用指令',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md'
-  }, {
-    title: '【课前预习】第一次使用Git',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8Git.md'
-  }, {
-    title: '【课前预习】第一次pull request',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request.md'
-  }, {
-    title: '【课前预习】第一次pull request错误汇总',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.md'
-  }, {
-    title: '如何查看自己的提交状态？',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md'
-  }, {
-    title: '如何更新从主项目fork过来的项目@由张丽娜同学贡献',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E4%BB%8E%E4%B8%BB%E9%A1%B9%E7%9B%AE%E6%9B%B4%E6%96%B0fork%E7%9A%84%E9%A1%B9%E7%9B%AE.md'
-  }, {
-    title: 'Git实战笔记@由何伟同学贡献',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0.md'
-  }, {
-    title: '如何查看git push和pr的提交结果',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%20push%E5%92%8Cpr%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md'
-  }];
-
-var ppt = [{
-    title: '第一节课PPT',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%80%E8%8A%82.pdf'
-  },
-  {
-    title: '第二节课PPT',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%BA%8C%E8%8A%82.pdf'
-  },
-  {
-    title: '第三节课PPT',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%89%E8%8A%82.pdf'
-  }];
-
-var topics = [{
-    title: '第一次使用JSON',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8JSON.md'
-  }, {
-    title: '【课前准备】安装NVM',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%89%E8%A3%85nvm.md'
-  }, {
-    title: '【第二节知识点】定义变量',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F.md'
-  }, {
-    title: '【第三节知识点】js编程重要语句',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/js%E9%87%8D%E8%A6%81%E8%AF%AD%E5%8F%A5.md'
-  }, {
-    title: '【第三节知识点】变量命名技巧',
-    url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%AE%80%E6%98%8E%E6%8A%80%E5%B7%A7.md'
-  }];
-  
 var app = new Vue({
   el: '#app',
   data: {
-    title: 'JavaScript编程入门',
-    teacher: '徐高阳',
-    startTime: '2017/08/08',
-    endTime: '2017/09/04',
-    gitTopics,
-    ppt,
-    topics
+    courseInfo: {},
+    gitTopics: [],
+    ppt: [],
+    topics: []
+  },
+  methods: {
+    getCourseInfo() {
+      var that = this;
+      $.post('https://js.xinshengdaxue.com/api/course/1/info', function(data) {
+        var result = data.result;
+
+        if (result.code === 1) {
+          that.courseInfo = result.courseInfo;
+        } else {
+          alert('fetch data error.');
+        }
+      });
+    },
+    getTopics() {
+      var that = this;
+      $.post('https://js.xinshengdaxue.com/api/catelog/list', function(data) {
+        var result = data.result;
+
+        if (result.code === 1) {
+          that.gitTopics = result.catelog.gitTopicsList;
+          that.ppt = result.catelog.pptList;
+          that.topics = result.catelog.topicsList;
+        } else {
+          alert('fetch data error.');
+        }
+      });
+    }
   }
 })
+
+app.getCourseInfo();
+app.getTopics();
 </script>

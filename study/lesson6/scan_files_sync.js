@@ -13,5 +13,5 @@ var dirPathString = '../../homework/lesson1';
 // ---------------------------------
 // 同步方案
 
-var files = fs.readdir(dirPathString);
+var files = fs.readdirSync(dirPathString);
 console.log(files);
