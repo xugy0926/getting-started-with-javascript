@@ -53,6 +53,15 @@ const topicsList = [{
 }, {
   title: '【第三节知识点】变量命名技巧',
   url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%AE%80%E6%98%8E%E6%8A%80%E5%B7%A7.md'
+}, {
+  title: '立即返回函数',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AB%8B%E5%8D%B3%E8%BF%94%E5%9B%9E%E5%87%BD%E6%95%B0.md'
+}, {
+  title: '间接返回函数',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E9%97%B4%E6%8E%A5%E8%BF%94%E5%9B%9E%E5%87%BD%E6%95%B0.md'
+}, {
+  title: '相对路径',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84.md'
 }];
 
 module.exports = { gitTopicsList, pptList, topicsList };
