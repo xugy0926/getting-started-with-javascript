@@ -7,7 +7,7 @@ var config = require('../config');
 var router = express.Router();
 var catelog = require('../public/content/catelog');
 
-route.post('/course/1/info', function(req, res, next) {
+router.post('/course/1/info', function(req, res, next) {
   res.json({result: {code: 1, courseInfo: {
     title: 'JavaScript编程入门',
     teacher: '徐高阳',
