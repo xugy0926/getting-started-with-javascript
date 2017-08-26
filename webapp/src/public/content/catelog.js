@@ -14,9 +14,6 @@ const gitTopicsList = [{
   title: '【课前预习】第一次pull request错误汇总',
   url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.md'
 }, {
-  title: '如何查看自己的提交状态？',
-  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md'
-}, {
   title: '如何更新从主项目fork过来的项目@右张丽娜同学贡献',
   url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E4%BB%8E%E4%B8%BB%E9%A1%B9%E7%9B%AE%E6%9B%B4%E6%96%B0fork%E7%9A%84%E9%A1%B9%E7%9B%AE.md'
 }, {
@@ -36,6 +33,15 @@ const pptList = [{
 }, {
   title: '第三节课PPT',
   url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%89%E8%8A%82.pdf'
+}, {
+  title: '第四节课PPT',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E5%9B%9B%E8%AF%BE.pdf'
+}, {
+  title: '第五节课PPT',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%BA%94%E8%8A%82.pdf'
+}, {
+  title: '第六节课PPT',
+  url: 'https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E5%85%AD%E8%AF%BE.pdf'
 }];
 
 const topicsList = [{
