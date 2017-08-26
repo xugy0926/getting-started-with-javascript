@@ -3,6 +3,8 @@
 
 ## 老师给出的浏览器和服务器的顺序图
 ![image.png](https://i.loli.net/2017/08/22/599c545678101.png)
+<<<<<<< HEAD
+=======
 
 #### 变量名称
 > 1. 完整代表了变量的含义吗？ -> 推到出更多信息
@@ -23,3 +25,4 @@ var employeeData = { // good。 这是个雇员的数据(很明确知道what是
   sex: 'man'
 }
 ```
+>>>>>>> upstream/master
