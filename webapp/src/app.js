@@ -1,18 +1,18 @@
-var express = require('express');
-var cors = require('cors');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var _ = require('lodash');
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import favicon from 'serve-favicon';
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import _ from 'lodash';
 
-var index = require('./routes/index');
-var words = require('./routes/words');
-var homework = require('./routes/homework');
-var api = require('./routes/api');
+import index from './routes/index';
+import words from './routes/words';
+import homework from './routes/homework';
+import api from './routes/api';
 
-var app = express();
+let app = express();
 
 // set cors
 app.use(cors());
@@ -32,9 +32,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 _.extend(app.locals, {
   title: 'JavaScript编程入门',
   teacher: '徐高阳',
-  teacherAvatar: 'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
+  teacherAvatar:
+    'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
   startTime: '2017/08/08',
-  endTime: '2017/09/10',
+  endTime: '2017/09/10'
 });
 
 app.use('/', index);
