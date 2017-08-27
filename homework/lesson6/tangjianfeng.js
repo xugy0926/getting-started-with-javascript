@@ -16,7 +16,18 @@ function callback(err, files) {
     }
 }
 
+ function callbackwrite(err) {
+  if (err) {
+    console.log('写文件失败');
+  } else {
+    console.log('写文件成功');
+  }
+}
+
+     
+
 
 
 fs.readdir(dirPathString, callback);
 fs.writeFileSync(outputPathString,files);
+callbackwrite();
