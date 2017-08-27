@@ -29,5 +29,4 @@ function callback(err, files) {
 
 
 fs.readdir(dirPathString, callback);
-fs.writeFileSync(outputPathString,files);
-callbackwrite();
+fs.writeFileSync(outputPathString,files,callbackwrite() );
