@@ -29,7 +29,7 @@ console.log(myLikeColorsList);
 
 
 // 找到某个元素在数组中的索引(游标)
-var index = myLikeColorsList.indexOf('green');
+var index = myLikeColorsList.indexOf('black');
 console.log(index);
 
 /*
