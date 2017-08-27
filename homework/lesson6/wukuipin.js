@@ -32,4 +32,4 @@ function fileContent(files) {
 fs.readdir(dirPathString, callbackRead);
 
 
-// 第一次提交的代码，在思考怎么写时脑中一直想着变量，所以写了看起来奇怪的代码。
+// 这是第三版，期待点评！
