@@ -55,4 +55,8 @@ function startWork() {
 }
 
 // 干活啦~~
+<<<<<<< HEAD
 startWork();
+=======
+startWork();
+>>>>>>> upstream/master
