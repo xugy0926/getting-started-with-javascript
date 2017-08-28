@@ -27,7 +27,7 @@ JavaScript的数据类型分为：
 2.[name]可以省略，省略后的函数叫做匿名函数（anonymous function）
 3.()里可包含0-255个参数（parameter，形参）
 4.{}里面的内容叫做函数体（function body）,包含0-多条JavaScript语句，语句的数量不限，每个语句用分号进行分隔 ；花括号是必须的，不可以省略；
-5.和var Ideal = "lixiang" 声明一个变量必须以var开头一样，声明一个变量必须以function开头
+5.和var Ideal = "lixiang" 声明一个变量必须以var开头一样，声明一个函数必须以function开头
 
 比如：
 ```JavaScript
