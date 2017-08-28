@@ -24,8 +24,7 @@ function callbackWrite(err) {
   }
 }
 
-function fileContent(files) {
-  fileContent = files;
+function fileContent(fileContent) {
   fs.writeFile(filePathString, fileContent, callbackWrite);
 }
 
