@@ -31,4 +31,4 @@ function fileContent(fileContent) {
 fs.readdir(dirPathString, callbackRead);
 
 
-// 这是第三版，期待点评！
+// 这是第四版，去掉重复赋值。
