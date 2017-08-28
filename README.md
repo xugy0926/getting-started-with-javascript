@@ -1,6 +1,6 @@
 ## 小白学JavaScript
 
-学习JavaScript？请[点这里](https://xugy0926.github.io/getting-started-with-javascript/)访问主页
+学习JavaScript？请[点这里](https://js.xinshengdaxue.com/)访问主页
 
 ## 共建小白用的JavaScript技术文档
 
@@ -26,5 +26,3 @@
 ## 通过脚本检查自己的文件是否被合并了
 
 我写了一个简单的脚本script/checkMyFile.js，有心的同学可以去看看这个脚本文件，运行一下。
-
-##  我是小一，我来修改一下 readme.md文件，然后我要 git status 看一下有什么变动
