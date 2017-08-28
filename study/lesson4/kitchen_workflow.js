@@ -1,4 +1,3 @@
-
 // 采购食物的函数
 function buyFoods() {
   console.log('采购原料和菜');
@@ -13,7 +12,7 @@ function prepare() {
 }
 
 // 做菜的函数
-// 
+//
 function cooking(foodsList) {
   console.log('今天要做这些菜' + foodsList);
   console.log('大工告成，上菜');
@@ -29,7 +28,7 @@ function startWork() {
   if (success) {
     var foodsList = buyFoods();
     var feast = cooking(foodsList);
-  
+
     console.log('----酒席准备好了----');
 
     for (var i = 0; i < feast.length; i++) {
@@ -42,6 +41,7 @@ function startWork() {
 
 // 干活啦~~
 startWork();
+<<<<<<< HEAD
 /*wufan at wufandeMacBook-Air in ~/allin/myproject/getting-started-with-javascript/study/lesson4 on master [!]
 $ node kitchen_workflow.js
 努力磨刀...努力洗碗...努力打扫...劳动最光荣
@@ -52,3 +52,5 @@ $ node kitchen_workflow.js
 鸡蛋西红柿
 红烧肉
 红烧鱼*/
+=======
+>>>>>>> upstream/master

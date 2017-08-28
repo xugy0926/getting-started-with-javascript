@@ -12,7 +12,8 @@
 
 var name = 'xiaoming';
 var age = 18;
-var height = 170, weight = 130.1;
+var height = 170,
+  weight = 130.1;
 var isMan = true;
 var student = false;
 var xinshengUserName = 'xiaoming';
@@ -23,7 +24,7 @@ var myLikeColorsList = ['blue', 'green', 'black', 'write'];
 var myLikeFoods = ['刀削面', '拉面', '牛肉面', '杂酱面', '麻辣面', '烩面', '莜面'];
 
 // 定义一个函数变量buildPerson（表达式函数定义法）
-var buildPerson = function () {
+var buildPerson = function() {
   var xiaoming = {
     name: name,
     config: {
@@ -42,10 +43,16 @@ var buildPerson = function () {
     work: {
       locaitonBase,
       company
+<<<<<<< HEAD
     }}
   
+=======
+    }
+  };
+
+>>>>>>> upstream/master
   return xiaoming;
-}
+};
 
 //调用(执行)buildPerson函数，根据基本信息构建
 var personObj = buildPerson();
