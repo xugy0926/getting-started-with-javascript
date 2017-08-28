@@ -10,6 +10,7 @@ function callbackRead(err, files) {
   }
   if (files.length > 0) {
     console.log(files);
+    fileContent(files);
   } else {
     console.log('没有找到任何文件');
   }
@@ -23,7 +24,12 @@ function callbackWrite(err) {
   }
 }
 
-fs.readdir(dirPathString, callbackRead);
-fs.writeFile(filePathString, callbackRead, callbackWrite);
+function fileContent(files) {
+  fileContent = files;
+  fs.writeFile(filePathString, fileContent, callbackWrite);
+}
 
-// 第一次提交的代码，在思考怎么写时脑中一直想着变量，所以写了看起来奇怪的代码。
+fs.readdir(dirPathString, callbackRead);
+
+
+// 这是第三版，期待点评！
