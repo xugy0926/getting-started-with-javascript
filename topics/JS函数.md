@@ -70,7 +70,7 @@
 
 一对挂括号的作用就是告诉编译器：哥们，紧跟在我后面那对挂括号里的代码都是我的函数体，你在编译检查的时候给我看仔细咯。
 
-    function output() {
+    function print() {
       console.log('hello, JS');
     }
 
@@ -80,12 +80,12 @@
 
 
 
-    function output() {
+    function print() {
       console.log('hello, JS');
     
-    output();
+    print();
 
-上面代码缺少右挂括号，编译器就认为output()就是函数output的函数体内容。这势必带来了严重问题。
+上面代码缺少右挂括号，编译器就认为print()就是函数print的函数体内容。这势必带来了严重问题。
 
 
 
@@ -270,15 +270,15 @@
 
 再举个例子
 
-    function output(name, content) {
+    function print(name, content) {
       console.log('i am ' + name);
       console.log('i am learnning ' + content);
     }
     
-    output('xiaoming', 'JS'); // 完美！参数逻辑都对应上了。
-    output('JS', 'xiaoming'); // 尴尬！参数逻辑没有对应上。
+    print('xiaoming', 'JS'); // 完美！参数逻辑都对应上了。
+    print('JS', 'xiaoming'); // 尴尬！参数逻辑没有对应上。
 
-上面的代码第一次调用print时没有问题，在调用output函数时，字符串xiaoming赋值给了print函数的name参数，字符串JS赋值给了print函数的content参数。
+上面的代码第一次调用print时没有问题，在调用print函数时，字符串xiaoming赋值给了print函数的name参数，字符串JS赋值给了print函数的content参数。
 
 
 
