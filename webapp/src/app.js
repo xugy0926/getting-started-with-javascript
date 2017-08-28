@@ -1,16 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import favicon from 'serve-favicon';
+// import favicon from 'serve-favicon';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-import _ from 'lodash';
 
+import courseInfoMiddleware from './middleware/courseInfo';
 import index from './routes/index';
 import words from './routes/words';
 import homework from './routes/homework';
-import api from './routes/api';
 
 let app = express();
 
@@ -22,26 +21,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-_.extend(app.locals, {
-  title: 'JavaScript编程入门',
-  teacher: '徐高阳',
-  teacherAvatar:
-    'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
-  startTime: '2017/08/08',
-  endTime: '2017/09/10'
-});
-
-app.use('/', index);
-app.use('/words', words);
-app.use('/homework', homework);
-app.use('/api', api);
+app.use('/', courseInfoMiddleware, index);
+app.use('/words', courseInfoMiddleware, words);
+app.use('/homework', courseInfoMiddleware, homework);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -51,7 +40,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
