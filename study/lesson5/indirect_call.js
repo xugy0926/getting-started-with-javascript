@@ -1,4 +1,3 @@
-
 // 定义函数callback
 function callback() {
   console.log('我跑完了');
