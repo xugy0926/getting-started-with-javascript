@@ -6,7 +6,7 @@
 ----|----|----
 mkdir|创建一个目录          |mkdir folder_name
 rmdir|删除一个目录          |rmdir folder_name
-mvdir|移动或重命名一个目录   |mvdir dir1 dir2
+mv|移动或重命名一个目录   |mv dir1 dir2
 cd   | 改变当前目录         |cd folder_name
 pwd  |显示当前目录的全路径   | pwd
 ls   |显示当前目录的所有文件 | ls / ls -la
