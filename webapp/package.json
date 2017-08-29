@@ -24,8 +24,9 @@
     "jsonfile": "3.0.1",
     "lodash": "4.0.0",
     "morgan": "~1.8.1",
+    "rimraf": "^2.6.1",
     "serve-favicon": "~2.4.2",
-    "rimraf": "^2.6.1"
+    "superagent": "^3.6.0"
   },
   "devDependencies": {
     "babel-jest": "^20.0.0",
