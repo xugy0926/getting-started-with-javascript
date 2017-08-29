@@ -10,7 +10,11 @@ function callbackRead(err, files) {
   }
   if (files.length > 0) {
     console.log(files);
+<<<<<<< HEAD
     fs.writeFile(filePathString, files, callbackWrite);
+=======
+    fileContent(files);
+>>>>>>> upstream/master
   } else {
     console.log('没有找到任何文件');
   }
@@ -24,6 +28,7 @@ function callbackWrite(err) {
   }
 }
 
+<<<<<<< HEAD
 fs.readdir(dirPathString, callbackRead);
 
 /*
@@ -48,3 +53,14 @@ fs.readdir(dirPathString, callbackRead);
 *
 * fs.writeFile(filePathString, fileContent, callback);
 */
+=======
+function fileContent(files) {
+  fileContent = files;
+  fs.writeFile(filePathString, fileContent, callbackWrite);
+}
+
+fs.readdir(dirPathString, callbackRead);
+
+
+// 这是第三版，期待点评！
+>>>>>>> upstream/master
