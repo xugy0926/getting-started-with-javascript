@@ -19,28 +19,32 @@ var nameId = '1234567'; // good。可以推到是名字的id。
 
 // 表述一个人的基本信息
 
-var person = {   // bad。person可以表示一个人，但没办法知道是个人信息
+var person = {
+  // bad。person可以表示一个人，但没办法知道是个人信息
   name: 'xiaoming',
   age: 18,
   sex: 'man'
 };
 
-var personInfoObj = {  // good。可以推到出这是个人信息，而且还是一个object类型。
+var personInfoObj = {
+  // good。可以推到出这是个人信息，而且还是一个object类型。
   name: 'xiaoming',
   age: 18,
   sex: 'man'
-}
+};
 
 // 表示一个输入的雇员信息
 
-var inputData = { // bad。只能表示是输入的数据。输入的什么数据？不清楚。只知道how，不知道what。
+var inputData = {
+  // bad。只能表示是输入的数据。输入的什么数据？不清楚。只知道how，不知道what。
   name: 'xiaoming',
   age: 18,
   sex: 'man'
-}
+};
 
-var employeeData = { // good。 这是个雇员的数据(很明确知道what是什么)，很清晰。
+var employeeData = {
+  // good。 这是个雇员的数据(很明确知道what是什么)，很清晰。
   name: 'xiaoming',
   age: 18,
   sex: 'man'
-}
+};

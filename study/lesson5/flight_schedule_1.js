@@ -1,4 +1,3 @@
-
 function checkFlightSchedule() {
   console.log('开始查航班信息');
 
