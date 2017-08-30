@@ -40,6 +40,7 @@
     }
   },
   "scripts": {
-    "start": "babel-node run start"
+    "start": "babel-node run start",
+    "updateTeam": "babel-node run updateTeam"
   }
 }
