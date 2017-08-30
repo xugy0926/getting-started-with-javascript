@@ -17,6 +17,7 @@ var dirPathString = '../../homework/lesson1';
 function callback(err, files) {
   if (err) {
     console.log('读取文件失败');
+    return;
   }
 
   if (files.length > 0) {
