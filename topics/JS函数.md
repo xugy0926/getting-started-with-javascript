@@ -24,7 +24,7 @@
     // 多次调用print函数
     print();
     print();
-    pring();
+    print();
 
 上面的代码按顺序调用了三次print函数，并在终端打印了三次hello, JS。这段代码从实际意义来讲没什么价值，但是一个可以解释函数可以被人一次调用的案例。
 
@@ -98,8 +98,8 @@
 
 因为字符串xiaoming被赋值给了变量name，我们才得已通过name来操作字符串xiaoming
 
-    // 把变量name的值和字符串xu进行想加
-    var fullname = 'xu' + name; 两个字符串想加。
+    // 把变量name的值和字符串xu进行相加
+    var fullname = 'xu' + name; 两个字符串相加。
     
     // 把变量name的值传递给console的log函数进行打印
     console.log(name);
@@ -114,7 +114,7 @@
       console.log('hello, JS');
     }
 
-再使用（使用函数一般成为调用）
+再使用（使用函数一般称为调用）
 
     print();
 
