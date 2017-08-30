@@ -13,7 +13,12 @@ fs.readdir(dirPathString, function(err, files) {
     }
 
     if (files.length > 0) {
-        fs.writeFile(filePathString, files.join("\n"), function(err){
+        for (var index = 0; index < files.length; index++) {
+            if (files[index].indexOf(".json") != files[index].length-5 ) {
+                files.splice(index,1);
+            };
+        }
+        fs.writeFile(filePathString, files.join(" \r\n "), function(err){
             if (err) {
                 console.log('写文件失败');
             } else {
@@ -27,6 +32,4 @@ fs.readdir(dirPathString, function(err, files) {
     }
 }
 );
-//问题一：不知道用什么方法能够筛选带.json的文件
-//问题二：尝试用join（"\n"）  files + "\n"  files + "\r\n"  都没有达到每个文件名换行的效果
 
