@@ -18,7 +18,7 @@ console.log(name[6]);
 console.log(name[7]);
 
 // 字符串有长度属性，通过循环访问单个字符
-for (var i = 0; i < name.length; i ++) {
+for (var i = 0; i < name.length; i++) {
   console.log(name[i]);
 }
 

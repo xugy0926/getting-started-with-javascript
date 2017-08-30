@@ -1,4 +1,3 @@
-
 // 采购食物的函数
 function buyFoods(callback) {
   console.log('我要开始采购食物啦。。。。');
@@ -14,7 +13,7 @@ function buyFoods(callback) {
 // 做准备工作的函数
 function prepare() {
   console.log('努力磨刀...努力洗碗...努力打扫...劳动最光荣');
-  return true;
+  return (Math.random() > 0.5);
 }
 
 // 做菜的函数
@@ -42,8 +41,8 @@ function startWork() {
     return;
   }
 
-  buyFoods(function (foodsList) {
-    cooking(foodsList, function (feast) {
+  buyFoods(function(foodsList) {
+    cooking(foodsList, function(feast) {
       console.log('----酒席准备好了----');
       for (var i = 0; i < feast.length; i++) {
         console.log(feast[i]);
