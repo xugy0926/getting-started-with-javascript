@@ -10,7 +10,11 @@ function callbackRead(err, files) {
   }
   if (files.length > 0) {
     console.log(files);
-    fileContent(files);
+    var fileData = [];
+    for (var i = 0; i < files.length; i++) {
+      fileData[i] = i + 1 + '.'+files[i]+',\n';
+    }
+    fileContent(fileData);
   } else {
     console.log('没有找到任何文件');
   }
@@ -24,12 +28,11 @@ function callbackWrite(err) {
   }
 }
 
-function fileContent(files) {
-  fileContent = files;
+function fileContent(fileContent) {
   fs.writeFile(filePathString, fileContent, callbackWrite);
 }
 
 fs.readdir(dirPathString, callbackRead);
 
 
-// 这是第三版，期待点评！
+// 这是第四版，去掉重复赋值。优化一下显示格式；
