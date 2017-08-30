@@ -13,7 +13,7 @@ function buyFoods(callback) {
 // 做准备工作的函数
 function prepare() {
   console.log('努力磨刀...努力洗碗...努力打扫...劳动最光荣');
-  return true;
+  return (Math.random() > 0.5);
 }
 
 // 做菜的函数
