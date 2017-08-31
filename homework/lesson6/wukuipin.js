@@ -6,7 +6,7 @@ var dirPathString = '../words-from-the-heart/';
 
 function callbackRead(err, files) {
   if (err) {
-    console.log('写文件失败');
+    fileContent(err);
   }
   if (files.length > 0) {
     console.log(files);
@@ -24,7 +24,7 @@ function callbackRead(err, files) {
     fileContent(fileData);
 >>>>>>> upstream/master
   } else {
-    console.log('没有找到任何文件');
+    fileContent('没有找到任何文件');
   }
 }
 
@@ -75,8 +75,12 @@ fs.readdir(dirPathString, callbackRead);
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 这是第三版，期待点评！
 >>>>>>> upstream/master
 =======
 // 这是第四版，去掉重复赋值。优化一下显示格式；
+>>>>>>> upstream/master
+=======
+// 这是第五版，使用不同的参数多次回调函数。哈哈哈，这是老师留的 bug，处理错误忘记return或回调，大部分的新手对这个问题视若无睹，我就是其中一位。现在对这个问题有一点点概念，我离高手又近了一步！
 >>>>>>> upstream/master
