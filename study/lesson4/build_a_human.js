@@ -43,14 +43,9 @@ var buildPerson = function() {
     work: {
       locaitonBase,
       company
-<<<<<<< HEAD
-    }}
-  
-=======
     }
   };
 
->>>>>>> upstream/master
   return xiaoming;
 };
 
