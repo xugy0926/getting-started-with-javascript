@@ -5,6 +5,9 @@ import clean from './clean';
 import scan from './scan';
 import { writeFile, copyFile } from './fs';
 import jsonfile from 'jsonfile';
+import request from 'superagent';
+
+var host = process.env.host || 'localhost:3001';
 
 const lessonPath = '../homework/';
 const lesson2PathStr = '../homework/lesson2';
@@ -14,32 +17,37 @@ async function lesson(type) {
   let files = await run(scan, lessonPath + type);
   let jsonFilePath = 'result/' + type + '.json';
 
-  let lessonInfo = [];
+  let homeworkInfo = [];
   files.forEach(item => {
-    lessonInfo.push({name: item.replace('.md', ''), url: urlPre + type + '/' + item});
+    homeworkInfo.push({name: item.replace('.md', ''), url: urlPre + type + '/' + item});
   });
 
   return new Promise(function(resolve, reject) {
-    jsonfile.writeFile(jsonFilePath, lessonInfo, {spaces: 2}, function(err) {
+    jsonfile.writeFile(jsonFilePath, homeworkInfo, {spaces: 2}, function(err) {
       if (err) {
         reject('write json error.');
       } else {
-        resolve(jsonFilePath);
+        resolve(homeworkInfo);
       }
     });
   });
 }
 
 async function start() {
-  try {
-    await run(clean);
-    let lesson1Path = await lesson('lesson1');
-    await copyFile(lesson1Path, path.join(__dirname, '../webapp/public/content/homework/lesson1.json'));
+  await run(clean);
+  for (var i = 0; i < 6; i++) {
+    try {
+      let homeworkInfo = await lesson('lesson' + (i + 1));
 
-    let lesson2Path = await lesson('lesson2');
-    await copyFile(lesson2Path, path.join(__dirname, '../webapp/public/content/homework/lesson2.json'));
-  } catch (err) {
-    console.log(err);
+      let result = await request
+        .put(`${host}/api/v1/learnJS/course/1/homework/${i+1}`)
+        .send({homeworkInfo: homeworkInfo}) // sends a JSON post body
+        .set('X-API-Key', 'foobar')
+        .set('Accept', 'application/json')
+      console.log(result.text);
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
 
