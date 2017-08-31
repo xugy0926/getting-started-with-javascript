@@ -23,7 +23,7 @@ function cooking(foodsList, callback) {
   // 模拟5秒后通过callback返回结果
   setTimeout(function() {
     console.log('今天要做这些菜' + foodsList);
-    console.log('大工告成，上菜');
+    console.log('大功告成，上菜');
 
     var feast = ['鸡蛋西红柿', '红烧肉', '红烧鱼'];
     callback(feast);
