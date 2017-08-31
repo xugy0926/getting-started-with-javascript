@@ -41,16 +41,3 @@ function startWork() {
 
 // 干活啦~~
 startWork();
-<<<<<<< HEAD
-/*wufan at wufandeMacBook-Air in ~/allin/myproject/getting-started-with-javascript/study/lesson4 on master [!]
-$ node kitchen_workflow.js
-努力磨刀...努力洗碗...努力打扫...劳动最光荣
-采购原料和菜
-今天要做这些菜fish,egg,meat
-大工告成，上菜
-----酒席准备好了----
-鸡蛋西红柿
-红烧肉
-红烧鱼*/
-=======
->>>>>>> upstream/master
