@@ -14,7 +14,7 @@
 
 要记住自己放在wiki里面的图片的文件名，git上传之后，如何使用这些图片呢？这是有个规则的，markdown引用时这样写：
 
-`![](https://raw.githubusercontent.com/wiki/自己github用户名/getting-started-with-javascript/图片名称.png)`
+`![](https://raw.githubusercontent.com/wiki/github_userName/github_projectName/pictureName.fileType)`
 
 ### 放一张实例图
 
