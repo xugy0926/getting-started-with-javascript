@@ -1,0 +1,88 @@
+<div class="col-md-4">
+  <% if (typeof teamInfo !== 'undefined') {%>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      指引
+    </div>
+    <div class="panel-body">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#question" data-whatever="@mdo">提问技巧</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamInfo" data-whatever="@fat">团队信息</button>
+
+      <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">提问技巧</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                1. 先去新大app查找。<br/> 2. 再去getting-started-with-javascript的<a href="https://github.com/xugy0926/getting-started-with-javascript/issues">issues</a>检索相关问题，找不到相关问题可以发起一个问题，老师会回答。<br/>                3. 最后还解决不了？或你的问题觉得很紧急？在微信群里问，问之前把问题整理好，尽量提供详细信息。<br/> 4. 如果在微信群不好意思问，还给你准备了一个幼儿园班。<br/>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="teamInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">团队信息</h4>
+            </div>
+            <div class="modal-body">
+              <div class="github-markdown">
+                  <%- teamInfo %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>
+
+  <div>
+    <a class="thumbnail" href="https://web.xinshengdaxue.com/home/lessons/details?course_id=40">
+      <img src="https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6">
+      <div class="caption">
+        <p>课程介绍</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      项目
+    </div>
+    <div class="panel-body">
+      <div style="margin-bottom: 15px">
+        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/getting-started-with-javascript">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> getting-started-with-javascript
+        </a>
+        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/words-from-the-heart">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true">
+          </span> words-from-the-heart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <% if (typeof homeworkInfoList !== 'undefined') { %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      作业
+    </div>
+    <div class="panel-body">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/words">心里话</a></li>
+        <% for(var i = 0; i < homeworkInfoList.length; i++) { %>
+        <li class="list-group-item"><a href="<%= homeworkInfoList[i].url %>">第<%= i + 1 %>次作业 <span class="badge"><%= homeworkInfoList[i].count %></span></a></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+  <% } %>
+</div>
+
