@@ -3,25 +3,28 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>小明的信息</title>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-<div>
+<div id="app">
   <div class="main-header">
     <div class="container">
       <h1>小明的个人信息</h1>
+      <P>{{ person.name}}</p>
     </div>
   </div>
   <div>
     <p>基本信息</p>
     <p>兴趣爱好</p>
     <p>课程信息</p>
-    <p>居然没有连接</p>
   </div>
 </div>
 </body>
 </html>
 <script>
 //声明并定义变量
+
+ alert('hello,js');
 
 var name = 'xiaoming';
 var age = 45;
@@ -116,4 +119,13 @@ var xiaoming = {
 }
 
 console.log(xiaoming);
+
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    person: xiaoming
+  }
+})
+
 </script>
