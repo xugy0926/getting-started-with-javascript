@@ -11,7 +11,7 @@ console.log(myLikeColorsList);
 // “遍历”这个在编程中经常用到，翻译成白话就是挨个数组元素查一遍
 // 就跟军训排队时教官要我们挨个报数一个意思。
 
-for (var i = 0; i < myLikeColorsList.length; i ++) {
+for (var i = 0; i < myLikeColorsList.length; i++) {
   console.log(myLikeColorsList[i]);
 }
 
@@ -27,9 +27,8 @@ console.log(myLikeColorsList);
 myLikeColorsList.shift();
 console.log(myLikeColorsList);
 
-
 // 找到某个元素在数组中的索引(游标)
-var index = myLikeColorsList.indexOf('green');
+var index = myLikeColorsList.indexOf('black');
 console.log(index);
 
 /*
