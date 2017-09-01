@@ -31,17 +31,17 @@ var fs = require('fs');
 var dirPathString = '../../homework/lesson1';
 
 // 定义一个callback函数，用于接收读取文件夹内容后的结果
-function wuhaha(errr,filess) {
-  if (errr) {
+function read_callback(err,files) {
+  if (err) {
     console.log('读取文件失败');
   }
 
-  if (filess.length > 0) {
-    console.log(filess);
+  if (files.length > 0) {
+    console.log(files);
     var filePathString = './lingxiaoAsync.txt';
-    var fileContent = filess;
-    fs.writeFile(filePathString, fileContent, callback);
-    console.log(filess.length);
+    var fileContent = files;
+    fs.writeFile(filePathString, fileContent, write_callback);
+    console.log(files.length);
     //console.log(Buffer);
   } else {
     console.log('没有找到任何文件');
@@ -49,10 +49,10 @@ function wuhaha(errr,filess) {
 }
 
 //调用fs的readdir函数读取所有文件
-fs.readdir(dirPathString,wuhaha);
+fs.readdir(dirPathString,read_callback);
 
 // 定义一个callback函数，用于接收写文件的返回结果
-function callback(err) {
+function write_callback(err) {
   if (err) {
     console.log('写文件失败');
   } else {
