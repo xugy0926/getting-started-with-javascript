@@ -1,6 +1,8 @@
 ## 部署好的静态页面
 
-https://yammmy.github.io/words-inside/
+静态页面：https://yammmy.github.io/words-inside/
+
+代码地址：https://github.com/Yammmy/words-inside
 
 ## 作业心得
 
@@ -42,5 +44,5 @@ var foo = function () {};
 
 好吧，不看这篇文档，真是想破头也想不明白。我 google 了一晚上，把注意力都放在 jquery 上了，难怪怎么也觉得不了问题。
 
-虽然我自己确实没能独自想明白，不过一旦看明白了这篇文档冰解决了问题，真是觉得一整天都很兴奋呢。
+虽然我自己确实没能独自想明白，不过一旦看明白了这篇文档就解决了问题，真是觉得一整天都很兴奋呢。
 
