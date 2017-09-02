@@ -3,9 +3,9 @@
 
 ---
 
-##队伍：志翀小分队
+## 队伍：志翀小分队
 
-##提取JSON文件的代码
+## 提取JSON文件的代码
 
 ```
 // 引入fs模块
@@ -60,7 +60,7 @@ console.log(content);
 jsonfile.writeFileSync(writePathString, content);
 ```
 
-##GIT页面地址
+## GIT页面地址
 
 [albertschr.github.io](http://albertschr.github.io)
 
