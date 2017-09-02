@@ -1,4 +1,4 @@
-﻿# hitchhacker-homework7
+# hitchhacker-homework7
 
 
 ---
