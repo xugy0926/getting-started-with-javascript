@@ -218,7 +218,7 @@
 > 你：服务员，来一份山西刀削面。
 > 服务员：要加量吗？。
 > 你：不要。
-> 服务员：一晚刀削面，正常做。
+> 服务员：一碗刀削面，正常做。
 
 
 
@@ -239,7 +239,7 @@
     var content = 'hello, world'
     print(content);
 
-上面的代码，在调用的print的时候，给了一个变量content。最终print这个函数在执行时，有用到content的内容吗？没有用。print的根本就不吊，我行我素的执行了console.log('hello, JS')。
+上面的代码，在调用的print的时候，给了一个变量content。最终print这个函数在执行时，有用到content的内容吗？没有用。print根本就不调，我行我素的执行了console.log('hello, JS')。
 
 
 
@@ -256,13 +256,13 @@
 
     // 定义print函数，该函数有一个参数content
     function print(content) {
-      cosnole.log(content);
+      console.log(content);
     }
     
     print('hello, JS'); // 完美！print在定义的时候明确需要一个参数，在调用的时候给了一个字符串。
     print(); // 尴尬！print在定义的时候明确需要一个参数，但没给！
 
-上面的代码中，在调用ouput()d的时候，ouput函数体内的conole.log(content)会打印出undefined，一个不明确的值。这是因为print函数在被调用时，从调用者那边没有设置内容给参数变量content。
+上面的代码中，在调用print()的时候，print函数体内的console.log(content)会打印出undefined，一个不明确的值。这是因为print函数在被调用时，从调用者那边没有设置内容给参数变量content。
 
 这个错误在实际工作中经常发生。
 
@@ -328,7 +328,7 @@ print这个函数的功能就是打印调用者传进来的内容，打印就结
     
     var result = sum(1, 2);
 
-sum这个函数被设计成做两个数的想加，加完的结果明确了返回（return result）。这个返回值就很必要，如果加完不给结果这个函数就没有多大意义。
+sum这个函数被设计成做两个数的相加，加完的结果明确了返回（return result）。这个返回值就很必要，如果加完不给结果这个函数就没有多大意义。
 
 
 
