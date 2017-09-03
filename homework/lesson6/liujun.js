@@ -13,7 +13,7 @@ function readCallback(err, files) {
     }
     if (files.length > 0) {
       console.log(files);
-      var fileContent = 'files';
+      var fileContent = files;
       fs.writeFile(filePathString,fileContent,writeCallback)
     
     } else {
