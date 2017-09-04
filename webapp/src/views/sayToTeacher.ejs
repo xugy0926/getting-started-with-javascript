@@ -72,7 +72,7 @@
 
           $.post('/sayToTeacher/add', { name: this.name, account: this.account, content: this.content }, function (result) {
             if (!result || !result.code) {
-              alert('error');
+              alert(result.message);
             } else {
               that.name = '';
               that.account = '';
