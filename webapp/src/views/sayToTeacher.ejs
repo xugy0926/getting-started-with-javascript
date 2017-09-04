@@ -13,7 +13,7 @@
                 <div class="media" v-for="item in comments">
                   <div class="media-body">
                     <h4 class="media-heading">{{ item.name }}</h4>
-                    {{ item.content }}
+                    <div v-html="item.content"></div>
                   </div>
                 </div>
               </div>
