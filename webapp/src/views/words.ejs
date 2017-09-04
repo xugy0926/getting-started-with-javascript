@@ -5,7 +5,7 @@
 
   <body>
     <div id="app">
-
+      <%- include('_nav') %>
       <%- include('_header') %>
 
         <div class="container">
@@ -25,6 +25,7 @@
           </div>
 
           <div class="col-md-8">
+            <div class="alert alert-danger" role="alert">下面没有你？可能你提交的json文件格式错误，再给我提一个pr修正你的json文件</div>
             <% for(var i = 0; i < words.length; i++ ) {%>
               <div class="media">
                 <div class="media-left">
