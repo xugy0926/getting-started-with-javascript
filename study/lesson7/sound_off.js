@@ -39,7 +39,7 @@ function soldierE(number, allCount) {
   console.log('5到');
 
   if (number < allCount) {
-    return 'unfinished' //还没结束啊。人呢？有人吗。。。'
+    return 'unfinished'; //还没结束啊。人呢？有人吗。。。'
   } else {
     return 'finished';
   }
