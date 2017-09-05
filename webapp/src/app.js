@@ -10,6 +10,7 @@ import courseInfoMiddleware from './middleware/courseInfo';
 import index from './routes/index';
 import words from './routes/words';
 import homework from './routes/homework';
+import sayToTeacher from './routes/sayToTeacher';
 
 let app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', courseInfoMiddleware, index);
 app.use('/words', courseInfoMiddleware, words);
 app.use('/homework', courseInfoMiddleware, homework);
+app.use('/sayToTeacher', sayToTeacher);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
