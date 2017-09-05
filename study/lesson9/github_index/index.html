@@ -67,9 +67,9 @@
       },
       sendData: function() {
         axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe', {
-          name: '******',
-          account: '*******',
-          content: '老师真酷~~'
+          name: '你的名字',
+          account: '你的账号',
+          content: '对老师说的话'
         })
         .then(function (response) {
           if (response.data.code === 1) {
