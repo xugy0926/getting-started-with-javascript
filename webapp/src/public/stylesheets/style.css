@@ -63,6 +63,16 @@
   margin-top: 0px;
 }
 
+.list-group-item-x {
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
