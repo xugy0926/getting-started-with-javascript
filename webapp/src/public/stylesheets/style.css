@@ -1,10 +1,21 @@
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand>img {
+  width: 20px;
+  height: 20px;
+}
+
 .main-header {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: -20px;
   margin-bottom: 0px;
   font-size: 24px;
   text-align: left;
-  background-color: #33495f;
+  background-image: url(../images/background.jpg);
 }
 
 .xingda {
@@ -50,6 +61,16 @@
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.list-group-item-x {
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .bs-callout {

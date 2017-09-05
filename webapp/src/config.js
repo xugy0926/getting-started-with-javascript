@@ -1,8 +1,2 @@
-import path from 'path';
-
-export default {
-  wordsFilePath: path.join(__dirname, '/public/content/catelog.json'),
-  wordsFilePath: path.join(__dirname, '/public/content/words.json'),
-  homeworkPath: path.join(__dirname, '/public/content/homework/')
-};
-
+export const apiUrl = 'https://js.xinshengdaxue.com/api/v1';
+export const apiUrlGraphql = 'https://js.xinshengdaxue.com/api/graphql';
