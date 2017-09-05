@@ -41,4 +41,4 @@ function startWork() {
 }
 
 // 干活啦~~
-startWork();
+startWork(); 
