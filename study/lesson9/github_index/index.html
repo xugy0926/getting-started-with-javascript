@@ -18,7 +18,9 @@
       </div>
     </div>
     <div class="container">
-      <div class="btn btn-primary" v-on:click="sendData">有话对老师说</div>
+      <div class="panel-body">
+        <div class="btn btn-primary" v-on:click="sendData">有话对老师说</div>
+      </div>
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">我的心里话</h3>
@@ -66,21 +68,7 @@
           });
       },
       sendData: function() {
-        axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe', {
-          name: '你的名字',
-          account: '你的账号',
-          content: '对老师说的话'
-        })
-        .then(function (response) {
-          if (response.data.code === 1) {
-            alert('成功');
-          } else {
-            alert(response.data.message);
-          }
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
+        //TODO: 对老师说点什么呢？
       }
     }
   });
