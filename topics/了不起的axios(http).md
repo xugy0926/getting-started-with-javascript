@@ -51,10 +51,10 @@ axios.post('/api', {
 //案例
 
 axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe', {
-    name: '***', // 你的名字
-    account: '******', // 你的账号
-    content: '老师真酷~~'
-  })
+    name: '***', // 你的名字（你要交第九次作业？一定要和前面交作业用的名字一样哟，否则我没办法统计你的作业次数）
+    account: '******', // 你注册新生大学的账号
+    content: '老师真酷~~' // 你想对老师说的真心话
+  })
   .then(function (response) {
     console.log(response);
   })
