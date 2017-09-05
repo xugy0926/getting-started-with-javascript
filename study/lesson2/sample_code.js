@@ -102,7 +102,7 @@ var xiaoming = {
     company: company
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming);
 
@@ -135,6 +135,6 @@ var xiaoming2 = {
     company
   },
   myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming2);

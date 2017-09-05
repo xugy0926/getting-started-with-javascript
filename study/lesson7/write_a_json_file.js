@@ -1,6 +1,6 @@
 // 引入jsonfile模块
 // https://github.com/jprichardson/node-jsonfile
-var jsonFile = require('jsonfile')
+var jsonFile = require('jsonfile');
 
 // 定义一个存放json文件的
 var file = './test_data/data.json';
