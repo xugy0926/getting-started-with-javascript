@@ -1,7 +1,5 @@
 ### 代码分析
 
-
-
 ```Javascript
 *1 function output(name){
 *2    console.log(name);
@@ -10,8 +8,6 @@
 *5 var name = 'Hello, JS';
 *6 output(name);
 ```
-
-
 
 * 第一行的name是定义output函数时设定的参数
 
