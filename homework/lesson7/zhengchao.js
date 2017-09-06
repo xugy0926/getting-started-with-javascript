@@ -40,4 +40,4 @@ function readOutcome(err, files) {
         console.log('没有找到任何文件');
     }
 }
-fs.readdir(dirPathString, readOutcome);
+fs.readdir(dirPathString, readOutcome)
