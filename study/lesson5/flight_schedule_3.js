@@ -1,9 +1,7 @@
-
 function checkFlightSchedule(callback) {
   console.log('开始查航班信息');
 
   setTimeout(function() {
-
     // 模拟构建航班的时间信息
     var scheduleInfo = {
       start: '8/23 8:00',

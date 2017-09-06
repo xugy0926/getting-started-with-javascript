@@ -7,18 +7,13 @@
 */
 
 //声明并定义变量
-<<<<<<< HEAD
+
 var name = 'xiaoming';
 var height = 170, weight = 130.1;
 var age = 18;
 var xinshengUserName = 'xiaoming';
 var wechat_user_name = 'xiaoming';
-=======
 
-var name = 'xiaoming';
-var age = 18;
-var height = 170, weight = 130.1;
->>>>>>> upstream/master
 var isMan = true;
 var student = false;
 var xinshengUserName = 'xiaoming';
@@ -107,7 +102,7 @@ var xiaoming = {
     company: company
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming);
 
@@ -140,6 +135,6 @@ var xiaoming2 = {
     company
   },
   myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming2);
