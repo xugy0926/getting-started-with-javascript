@@ -121,11 +121,9 @@ var app = new Vue({
   methods: {
     getCourseInfo() {
       var that = this;
-      $.post('https://js.xinshengdaxue.com/api/course/1/info', function(data) {
-        var result = data.result;
-
-        if (result.code === 1) {
-          that.courseInfo = result.courseInfo;
+      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/detail', function(data) {
+        if (data && data.code === 1) {
+          that.courseInfo = data.courseInfo;
         } else {
           alert('fetch data error.');
         }
@@ -133,13 +131,12 @@ var app = new Vue({
     },
     getTopics() {
       var that = this;
-      $.post('https://js.xinshengdaxue.com/api/catelog/list', function(data) {
-        var result = data.result;
+      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog', function(data) {
 
-        if (result.code === 1) {
-          that.gitTopics = result.catelog.gitTopicsList;
-          that.ppt = result.catelog.pptList;
-          that.topics = result.catelog.topicsList;
+        if (data && data.code === 1) {
+          that.gitTopics = data.catelog.gitTopicsList;
+          that.ppt = data.catelog.pptList;
+          that.topics = data.catelog.topicsList;
         } else {
           alert('fetch data error.');
         }

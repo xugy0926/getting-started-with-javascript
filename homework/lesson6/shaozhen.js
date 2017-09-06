@@ -1,7 +1,5 @@
 /*
-*第六课作业 Wei
-*
-*
+第六课作业
 */
 
 //同步方案
@@ -13,7 +11,7 @@ var fs = require('fs');
 var dirPathString = '../../../words-from-the-heart';
 
 //指定读取后所写入的文件的存放路径，名称和格式
-var outputPathString = './Wei.txt';
+var outputPathString = './wordsFromTheHeartName.txt';
 
 //读取内容并赋值给写入文件
 var outPutFileContent = fs.readdirSync(dirPathString);
@@ -25,7 +23,7 @@ fs.writeFileSync(outputPathString, outPutFileContent);
 
 var fs = require('fs');
 var readPathString = '../../../words-from-the-heart';
-var writePathString = './Wei.txt';
+var writePathString = './wordsFromTheHeartName2.txt';
 
 // 定义一个read_callback函数，用于接收读取文件夹内容后的结果
 function read_callback(err, files) {

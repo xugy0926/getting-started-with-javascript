@@ -18,5 +18,3 @@
 4. flight_schedule_2.js // 间接返回案例
 5. flight_schedule_3.js // 异步处理案例
 6. kitchen_wordflow_async.js  // 异步实现一桌酒席
-
-
