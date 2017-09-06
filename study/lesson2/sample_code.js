@@ -9,8 +9,11 @@
 //声明并定义变量
 
 var name = 'xiaoming';
-var age = 18;
 var height = 170, weight = 130.1;
+var age = 18;
+var xinshengUserName = 'xiaoming';
+var wechat_user_name = 'xiaoming';
+
 var isMan = true;
 var student = false;
 var xinshengUserName = 'xiaoming';
@@ -32,6 +35,7 @@ var myJavaScriptLessionInfoObj = {
   lessionTarget: '帮助更多小白学习JavaScript',
   githubUrl: 'https://github.com/xugy0926/getting-started-with-javascript'
 };
+
 
 /*
 * 输出个人信息

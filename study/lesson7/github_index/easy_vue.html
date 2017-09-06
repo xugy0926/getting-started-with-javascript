@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 引入vue模块 -->
+    <script src="./public/vue.min.js"></script>    
+  </head>
+  <body >
+    <!-- 设置一个锚点，好让初始化vue的时候来依据这个锚点构建映射关系 -->
+    <div id="abc">
+    <!-- 引用-->
+    <h1>{{ title }}</h1>
+    </div>
+  </body>
+</html>
+<script>
+  // vue官网： https://cn.vuejs.org/v2/guide/
+  // 初始化Vue
+
+  var obj = {
+    el: '#abc',
+    data: {
+      title: '学习JavaScript'
+    }    
+  };
+
+  var app = new Vue(obj);
+
+  setTimeout(function () {
+    app.title = 'JavaScript真容易'
+  }, 5000);
+
+</script>
