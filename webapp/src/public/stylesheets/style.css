@@ -97,6 +97,15 @@
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
 }
 
+.media-x {
+  margin-top: 0px;
+}
+
+.markdown-body img {
+  max-height: 200px;
+  background-color: #fff;
+}
+
 .footer {
   position: relative;
   padding-top: 40px;
