@@ -10,7 +10,7 @@
   <div class="main-header">
     <div class="container">
       <h1>小明的个人信息</h1>
-        <p>{{person.name}}</p>
+      <P>{{ person.name}}</p>
     </div>
   </div>
   <div>
@@ -116,15 +116,16 @@ var xiaoming = {
     company: company
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
-}
+};
 
 console.log(xiaoming);
 
 
 var app = new Vue({
-    el: '#app',
-    data: {
-        person:xiaoming
-    }
-})
+  el: '#app',
+  data: {
+    person: xiaoming
+  }
+});
+
 </script>
