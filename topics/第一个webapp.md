@@ -1,6 +1,7 @@
 
 
-express是最成功的基于nodejs的webapp架构之一。一个好的架构能给我们带来什么？更方便的处理视图(html)，更方便的处理路由（/page1，/page2）。比如，我想设计一个访问https://xxx.com/page1的地址就能返回页面page1.html，访问https://xxx.com/page2的地址就能返回页面page2.html。这事搁在express身上太容易解决了。甚至你都不用搞懂它是怎么工作的就能搞定这事。
+express是最成功的基于nodejs的webapp架构之一。一个好的架构能给我们带来什么？更方便的处理视图(html)，更方便的处理路由（/page1，/page2）。
+比如，我想设计一个访问`https://xxx.com/page1`的地址就能返回页面`page1.html`，访问`https://xxx.com/page2`的地址就能返回页面`page2.html`。这事搁在express身上太容易解决了。甚至你都不用搞懂它是怎么工作的就能搞定这事。
 
 
 
