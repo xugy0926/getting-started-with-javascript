@@ -5,13 +5,13 @@ import { get, post, put } from '../request';
 var router = express.Router();
 
 router.get('/', async function(req, res) {
-  res.render('sayToTeacher');
+  res.render('studentWorks');
 });
 
 router.get('/list', async function(req, res) {
   try {
     let result = await get({
-      url: `${apiUrl}/learnJS/sayToMe`
+      url: `${apiUrl}/learnJS/course/1/studentWorks`
     });
 
     res.json(result);
@@ -21,35 +21,16 @@ router.get('/list', async function(req, res) {
 });
 
 router.post('/add', async function(req, res) {
-  let { name, account, content } = req.body;
-
+  let { name, account, url, member, description } = req.body;
+  
   try {
-    if (!name || !account || !content) {
+    if (!name || !account || !url) {
       throw new Error('数据错误');
     }
 
     let result = await post({
-      url: `${apiUrl}/learnJS/sayToMe`,
-      body: { name, account, content }
-    });
-
-    res.json(result);
-  } catch (err) {
-    res.json({ code: 0, message: err.message });
-  }
-});
-
-router.post('/addComment', async function(req, res) {
-  let { account, comment } = req.body;
-
-  try {
-    if (!account || !comment) {
-      throw new Error('数据错误');
-    }
-
-    let result = await put({
-      url: `${apiUrl}/learnJS/sayToMe`,
-      body: { account, content }
+      url: `${apiUrl}/learnJS/course/1/studentWorks`,
+      body: { name, account, url, member, description }
     });
 
     res.json(result);
