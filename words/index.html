@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JavaScript编程入门</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.css"">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./public/js/index.js"></script>
+</head>
+<body>
+<div id="app">
+  <div class="main-header">
+    <div class="container">
+      <h1>{{message}}</h1>
+    </div>
+  </div>
+  <div class="class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">文档</h3>
+        </div>
+        <div class="panel-body">
+          <li class="list-group-item">
+            <a href="https://github.com/xugy0926/getting-started-with-javascript/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8Git">第一次使用Git</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: testJSON.title
+    }
+  });
+</script>
+</html>
