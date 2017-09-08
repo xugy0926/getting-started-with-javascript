@@ -22,7 +22,7 @@
            console.log('Alert: 没有找到任何文件!');
        }
    }
-   //定义一个 fileArray 函数，用于将 files 转为逐行打印的字符串
+   //定义一个 fileArrayToString 函数，用于将 files 转为逐行打印的字符串
    function fileArrayToString(files) {
        var returnString = [];
        // var returnString = '';
