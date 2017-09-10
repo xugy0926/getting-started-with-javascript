@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>新生大学</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <script src="./public/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-header">
+      <div class="container">
+        <h1>JavaScript编程入门</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel-body">
+        <div class="btn btn-primary" v-on:click="sendData">有话对老师说</div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">我的心里话</h3>
+        </div>
+        <div class="panel-body">
+          <div class="words-pannel" v-for="item in wordsList">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                    <img class="media-object avatar" v-bind:src="item.avatar" alt="...">
+                  </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  {{ item.name }}
+                </h4>
+                {{ item.words }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // vue官网： https://cn.vuejs.org/v2/guide/
+  // 初始化Vue
+
+  var app = new Vue({
+    el: '#app',   // #app 和html中div#id的 app 对应
+    data: {
+      wordsList: []  // 变量wordsList可以在html使用
+    },
+    methods: {
+      fetchData: function() {
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+          .then(function (response) {
+            app.wordsList = response.data.words;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      },
+      sendData: function() {
+        //TODO: 对老师说点什么呢？
+      }
+    }
+  });
+
+  app.fetchData();
+</script>
