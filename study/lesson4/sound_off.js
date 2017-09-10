@@ -6,26 +6,26 @@
 */
 
 function soldierA() {
-  console.log('1到');
+  console.log("1到");
 }
 
 function soldierB() {
-  console.log('2到');
+  console.log("2到");
 }
 
 function soldierC() {
-  console.log('3到');
+  console.log("3到");
 }
 
 function soldierD() {
-  console.log('4到');
+  console.log("4到");
 }
 
 function soldierE() {
-  console.log('5到');
+  console.log("5到");
 }
 
-// 按顺序调用士兵函数韩式报数
+// 按顺序调用士兵函数开始报数
 // 这是一种顺序调用函数的方式，由startSoundOff内部设计好调用的执行流程
 function startSoundOff() {
   soldierA();

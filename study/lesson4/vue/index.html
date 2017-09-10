@@ -15,7 +15,7 @@
   </div>
   <div>
     <h1>基本信息</h1>
-    <div>兴趣爱好</p>
+    <p>兴趣爱好</p>
     <p>课程信息</p>
   </div>
 </div>
@@ -107,17 +107,18 @@ var personObj = {
   },
   like: {
     myLikeColorsList: myLikeColorsList,
-    myLikeFoods: myLikeColorsList
+    myLikeFoods: myLikeFoods
   },
   work: {
     locaitonBase: locaitonBase,
     company: company
   },
   myJavaScriptLessionInfoObj: myJavaScriptLessionInfoObj
-}
+};
 
 console.log(personObj);
 
+// vue官网： https://cn.vuejs.org/v2/guide/
 // 初始化Vue
 var app2 = new Vue({
   el: '#app',   // #app 和html中div#id的 app 对应
