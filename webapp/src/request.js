@@ -38,3 +38,23 @@ export async function post({ url, body }) {
     return Promise.reject(err);
   }
 }
+
+export async function put({ url, body }) {
+  try {
+    let result = await request
+      .put(url)
+      .send(body)
+      .set('X-API-Key', 'foobar')
+      .set('Accept', 'application/json');
+    
+    result = result.body;
+
+    if (!result || !result.code) {
+      throw new Error(result ? result.message : '发生错误');
+    }
+    
+    return Promise.resolve(result);
+  } catch (err) {
+    return Promise.reject(err);
+  }
+}
