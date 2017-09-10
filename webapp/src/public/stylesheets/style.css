@@ -106,6 +106,12 @@
   background-color: #fff;
 }
 
+.comment {
+  margin: 0 20px;
+  font-size: 14px;
+  color: #337ab7;
+}
+
 .footer {
   position: relative;
   padding-top: 40px;
