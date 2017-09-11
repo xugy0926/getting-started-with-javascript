@@ -1,0 +1,3 @@
+{"photograph": "(http://a3.qpic.cn/psb?/V10JH8df1OW8A3/vAEC2UOGMhnLxOhoh0Wkfd2*IyN5oR0s47gfPgG7lcE!/m/dG4BAAAAAAAAnull&bo=gAKAAgAAAAARBzA!&rf=photolist&t=5)",
+    "name": "黄琦",
+       "dords": "想多学一点，说不定什么时候就用到了js"}

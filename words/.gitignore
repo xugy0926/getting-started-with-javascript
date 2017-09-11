@@ -1,0 +1,7 @@
+./script/node_modules
+# Ignore Mac OS desktop services store
+.DS_Store
+node_modules
+error.json
+words.json
+output
