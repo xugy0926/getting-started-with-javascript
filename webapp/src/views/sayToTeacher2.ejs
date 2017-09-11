@@ -15,13 +15,13 @@
                   <div class="media-body">
                     <h4 class="media-heading">{{ item.name }}</h4>
                     <div v-html="item.content"></div>
-                    <!-- <span class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"><div class="comment" v-html="item.content"></span></div> -->
+                    <span class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"><div class="comment" v-html="item.content"></span></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
               <div class="panel-body">
                 <form>
@@ -41,7 +41,7 @@
                 </form>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
     </div>
   </body>
@@ -52,8 +52,7 @@
         comments: [],
         name: '',
         account: '',
-        content: '',
-        comment: '',
+        content: ''
       },
       methods: {
         fetchComment: function () {
@@ -81,24 +80,6 @@
               that.account = '';
               that.content = '';
               that.comments.push(result.data);
-            }
-          })
-        },
-        submit: function () {
-          var that = this;
-          if (!this.name || !this.account || !this.content) {
-            alert('输入框不能为空');
-            return;
-          }
-
-          $.post('/sayToTeacher/addComment', { account: this.account, comment: this.comment }, function (result) {
-            if (!result || !result.code) {
-              alert(result.message);
-            } else {
-              that.name = '';
-              that.account = '';
-              that.content = '';
-              that.comment = '';
             }
           })
         }
