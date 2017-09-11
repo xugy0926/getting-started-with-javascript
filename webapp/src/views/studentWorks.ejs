@@ -20,7 +20,7 @@
                   <span class="label label-primary">团队成员</span>
                   <p>{{ item.member }}</p>
                   <span class="label label-primary">项目地址</span>
-                  <p><a href="item.url">{{item.url}}</a></p>
+                  <p><a v-bind:href="item.url">{{item.url}}</a></p>
                   <span class="label label-primary">描述</span>
                   <div v-html="item.description"></div>
                 </div>
