@@ -1,0 +1,29 @@
+.main-header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: left;
+  background-color: #6f5499;
+}
+
+.main-header h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.words-pannel {
+  margin-top: 10px;
+}
+
+.avatar {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 10px;
+  float: left;
+  margin-right: 18px;
+  cursor: default;
+}

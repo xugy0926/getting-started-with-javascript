@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>新生大学</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <script src="./public/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-header">
+      <div class="container">
+        <h1>JavaScript编程入门</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">我的心里话</h3>
+        </div>
+        <div class="panel-body">
+          <div class="words-pannel">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                    <img class="media-object avatar" v-bind:src="currentItem.avatar" alt="...">
+                  </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  {{ currentItem.name }}
+                </h4>
+                {{ currentItem.words }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn btn-primary" v-on:click="onPrev">上一个</div>
+        <div class="btn btn-primary" v-on:click="onNext">下一个</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // vue官网： https://cn.vuejs.org/v2/guide/
+  // 初始化Vue
+
+  var app = new Vue({
+    el: '#app',   // #app 和html中div#id的 app 对应
+    data: {
+      currentIndex: 0,
+      currentItem: {},
+      wordsList: []  // 变量wordsList可以在html使用
+    },
+    methods: {
+      fetchData: function() {
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+          .then(function (response) {
+            app.wordsList = response.data.words;
+            app.currentIndex = 0;
+            app.currentItem = app.wordsList[app.currentIndex];
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      },
+      onPrev: function() {
+        if (--app.currentIndex < 0) {
+          app.currentIndex = app.wordsList.length - 1;
+        } else {
+          app.currentIndex = app.currentIndex - 1;
+        }
+
+        app.currentItem = app.wordsList[app.currentIndex];
+      },
+      onNext: function() {
+        if ( ++app.currentIndex >= app.currentItem.length ) {
+          app.currentIndex = 0;
+        } else {
+          app.currentIndex = app.currentIndex + 1;
+        }
+
+        app.currentItem = app.wordsList[app.currentIndex];
+      }
+    }
+  });
+
+  app.fetchData();
+</script>
