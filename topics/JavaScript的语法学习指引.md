@@ -40,7 +40,7 @@ http://www.w3school.com.cn/js/index.asp
 
 全都是内置服务的api。当字典来查。
 
-#### 途径三：mozilla JavaScript
+## 途径三：mozilla JavaScript
 
 mozilla的开发者网站为我们提供了全面的JavaScript语法知识。
 
