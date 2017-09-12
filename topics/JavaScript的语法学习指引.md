@@ -105,8 +105,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS
 - 同步函数。
 - 异步函数。
 
-#### [两种函数返回结果的方式](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E7%9A%84%E6%96%B9%E5%BC%8F.md
-)
+#### [两种函数返回结果的方式](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E7%9A%84%E6%96%B9%E5%BC%8F.md)
 
 - 立即返回结果。
 - callback返回结果。
