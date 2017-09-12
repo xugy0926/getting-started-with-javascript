@@ -1,150 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>JavaScript编程入门</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel='stylesheet' href='./public/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' />
-    <link rel="stylesheet" href="./public/style.css">
-    <script src="./public/jquery-3.2.1.min.js"></script>
-    <script src="./public/vue.min.js"></script>
+  <meta charset="UTF-8">
+  <title>新生大学</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="vue.min.js"></script>
+  <script src="filelist.js"></script>
 </head>
+
 <body>
-<div id="app">
-  <div class="main-header">
+  <div id="app">
+    <div class="main-header">
+      <div class="container">
+        <h1>JavaScript编程入门</h1>
+      </div>
+    </div>
     <div class="container">
-      <h1 class="title">{{ courseInfo.title }}</h1>
-      <div>
-        <img class="avatar"
-          v-bind:src="courseInfo.teacherAvatar">
-        </img>
-        <div class="teacher-info-pannel">
-          <p class="teacher-info-item">讲师: <span>{{ courseInfo.teacher }}</span></p>
-          <p class="teacher-info-item">授课时间: <span>{{ courseInfo.startTime }} - {{ courseInfo.endTime }}</span></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="xingda">
-      <img src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></img>
-      <a href="https://xinshengdaxue.com">新生大学出品</a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="col-md-12">
-      <div class="bs-callout bs-callout-danger">
-        <h4> 提问技巧 </h4>
-        <p>
-          1. 先去新大app查找。<br/>
-          2. 再去getting-started-with-javascript的<a href="https://github.com/xugy0926/getting-started-with-javascript/issues">issues</a>检索相关问题，找不到相关问题可以发起一个问题，老师会回答。<br/>
-          3. 最后还解决不了？或你的问题觉得很紧急？在微信群里问，问之前把问题整理好，尽量提供详细信息。<br/>
-          4. 如果再微信群不好意思问，还给你准备了一个幼儿园班。<br/>
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="row">
-        <a class="thumbnail" href="https://www.xinshengdaxue.com/lessons/details?course_id=40">
-          <img src="https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6">
-          <div class="caption">
-            <p>课程介绍</p>
-          </div>
-        </a>
-      </div>
-
-      <div style="margin-bottom: 15px">
-        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/getting-started-with-javascript">
-          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> getting-started-with-javascript
-        </a>
-        <a type="button" class="btn btn-default btn-block" href="https://github.com/xugy0926/words-from-the-heart">
-          <span class="glyphicon glyphicon-heart" aria-hidden="true">
-          </span> words-from-the-heart
-        </a>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">GIT & GITHUB</h3>
-        </div>
-        <div class="panel-body">
-          <li class="list-group-item" v-for="item in gitTopics">
-            <a :href="item.url">
-              {{ item.title }}
-            </a>
-          </li>
-        </div>
-      </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">PPT</h3>
-        </div>
-        <div class="panel-body">
-          <li class="list-group-item" v-for="item in ppt">
-            <a :href="item.url">
-              {{ item.title }}
-            </a>
-          </li>
-        </div>
-      </div>
-
-      <div class="panel panel-default">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">课程的技术文档</h3>
+            <h3 class="panel-title">我的心里话</h3>
           </div>
           <div class="panel-body">
-            <li class="list-group-item" v-for="item in topics">
-              <a :href="item.url">
-                {{ item.title }}
-              </a>
-            </li>
+            <div class="words-pannel" v-for="item in wordsList">
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object avatar" v-bind:src="item.avatar" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    {{ item.name }}
+                  </h4>
+                    {{ item.words }}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="footer">
-  <img class="avatar" src="https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg"></img>
-</div>
 </body>
+
 </html>
 <script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    courseInfo: {},
-    gitTopics: [],
-    ppt: [],
-    topics: []
-  },
-  methods: {
-    getCourseInfo() {
-      var that = this;
-      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/detail', function(data) {
-        if (data && data.code === 1) {
-          that.courseInfo = data.courseInfo;
-        } else {
-          alert('fetch data error.');
-        }
-      });
-    },
-    getTopics() {
-      var that = this;
-      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog', function(data) {
-
-        if (data && data.code === 1) {
-          that.gitTopics = data.catelog.gitTopicsList;
-          that.ppt = data.catelog.pptList;
-          that.topics = data.catelog.topicsList;
-        } else {
-          alert('fetch data error.');
-        }
-      });
+  // vue官网： https://cn.vuejs.org/v2/guide/
+  // 初始化Vue
+  // 把收集的数据放在这里
+  
+  new Vue({
+    el: '#app',   // #app 和html中div#id的 app 对应
+    data: {
+      wordsList: fileList()  // 变量wordsList可以在html使用
     }
-  }
-})
-
-app.getCourseInfo();
-app.getTopics();
+  });
 </script>

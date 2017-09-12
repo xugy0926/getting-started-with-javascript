@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('_head') %>
+
+  <body>
+    <div id="app">
+      <%- include('_nav') %>
+        <div class="container">
+          <div class="col-md-8">
+            <div class="page-header">
+              <h1><a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E4%BD%9C%E5%93%81%E5%BE%81%E9%9B%86.md">活动说明</a></h1>
+            </div>
+            <div class="markdown-body">
+              <div class="panel panel-default" v-for="item in comments">
+                <div class="panel-heading">
+                  {{ item.name }}
+                </div>
+                <div class="panel-body">
+                  <span class="label label-primary">团队成员</span>
+                  <p>{{ item.member }}</p>
+                  <span class="label label-primary">项目地址</span>
+                  <p><a v-bind:href="item.url">{{item.url}}</a></p>
+                  <span class="label label-primary">描述</span>
+                  <div v-html="item.description"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">提交人名字</label>
+                    <input type="text" class="form-control" v-model="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">提交人在新大注册的手机号或邮箱</label>
+                    <input type="text" class="form-control" v-model="account">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">作品地址</label>
+                    <input type="text" class="form-control" v-model="url">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">成员</label>
+                    <input type="text" class="form-control" v-model="member">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">说明</label>
+                    <textarea class="form-control" rows="10" v-model="description"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="submit">提交</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        comments: [],
+        name: '',
+        account: '',
+        url: '',
+        member: '',
+        description: '',
+      },
+      methods: {
+        fetchComment: function () {
+          var that = this;
+          $.get('/studentWorks/list', function (result) {
+            if (!result || !result.code) {
+              alert('获取列表失败');
+            } else {
+              that.comments = result.data;
+              console.log(result.data);
+            }
+          })
+        },
+        submit: function () {
+          var that = this;
+          if (!this.name || !this.account || !this.url) {
+            alert('输入框不能为空');
+            return;
+          }
+
+          $.post('/studentWorks/add', {
+            name: this.name,
+            account: this.account,
+            url: this.url,
+            member: this.member,
+            description: this.description
+          }, function (result) {
+            if (!result || !result.code) {
+              alert(result.message);
+            } else {
+              that.name = '';
+              that.account = '';
+              that.member = '';
+              that.url = '';
+              that.description = '';
+              that.comments.push(result.data);
+            }
+          })
+        }
+      }
+    });
+
+    app.fetchComment();
+  </script>
+
+</html>
