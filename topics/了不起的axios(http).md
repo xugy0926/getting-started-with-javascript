@@ -13,6 +13,9 @@ axios.get().then().then().catch();
 
 axios.get()获得的结果给到第一个then()，第一个then处理完后给到第二个then()。如果中间过程发生错误，会直接跳到cath()里。
 
+事实上axios.get()是一个异步函数，axios.get()的异步回来后才会调用后面的then()函数。以这样的推理，整个axios.get().then().then().catch()就是一个异步函数链条。
+
+
 #### Get请求
 ```javascript
 axios.get('/api')
