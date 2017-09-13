@@ -82,6 +82,21 @@ for (
 
 console.log('\n');
 
+//for+if组合 规避数组长度为奇数时重复输出中间成员
+for (
+  var i = 0, j = myLikeColorsList.length - 1;
+  i < myLikeColorsList.length / 2;
+  i++, j--
+) {
+if (i!=j){
+  console.log(myLikeColorsList[i]);
+  console.log(myLikeColorsList[j]);
+}else{
+  console.log(myLikeColorsList[i]);
+}
+}
+
+
 /*
 * 循环语句 -- while
 * 只要满足while的条件，就会循环执行循环体的代码
