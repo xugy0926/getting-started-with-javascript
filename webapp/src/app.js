@@ -10,6 +10,7 @@ import courseInfoMiddleware from './middleware/courseInfo';
 import index from './routes/index';
 import words from './routes/words';
 import homework from './routes/homework';
+import topics from './routes/topics';
 import sayToTeacher from './routes/sayToTeacher';
 import studentWorks from './routes/studentWorks';
 
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', courseInfoMiddleware, index);
 app.use('/words', courseInfoMiddleware, words);
+app.use('/topics', courseInfoMiddleware, topics);
 app.use('/homework', courseInfoMiddleware, homework);
 app.use('/sayToTeacher', sayToTeacher);
 app.use('/studentWorks', studentWorks);

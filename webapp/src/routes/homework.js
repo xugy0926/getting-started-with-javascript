@@ -4,8 +4,22 @@ import { get } from '../request';
 
 var router = express.Router();
 
-/* GET homework page. */
-router.get('/:number', async function(req, res, next) {
+router.get('/list', async function(req, res, next) {
+
+  try {
+    let homeworkInfoResult = await get({
+      url: `${apiUrl}/learnJS/course/1/homework`
+    });
+
+    res.render('homeworkList', { homeworkInfoList: homeworkInfoResult.homeworkInfo, });
+  } catch (err) {
+    next(err);
+  }
+});
+
+module.exports = router;
+
+router.get('/detail/:number', async function(req, res, next) {
   const number = req.params.number;
 
   try {

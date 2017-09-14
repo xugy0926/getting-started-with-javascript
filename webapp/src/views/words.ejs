@@ -9,10 +9,6 @@
       <%- include('_header') %>
 
         <div class="container">
-          <ol class="breadcrumb">
-            <li><a href="/">主页</a></li>
-            <li class="active">我的心里话</li>
-          </ol>
           <div class="col-md-12">
             <div class="bs-callout bs-callout-danger">
               <h4>
@@ -23,7 +19,6 @@
               </p>
             </div>
           </div>
-
           <div class="col-md-8">
             <div class="alert alert-danger" role="alert">下面没有你？可能你提交的json文件格式错误，再给我提一个pr修正你的json文件</div>
             <% for(var i = 0; i < words.length; i++ ) {%>

@@ -10,22 +10,20 @@ var md = new MarkdownIt();
 /* GET home page. */
 router.get('/', async function(req, res, next) {
   try {
+    let wordsResult = await get({
+      url: `${apiUrl}/learnJS/course/1/words`
+    });
     let teamInfoResult = await get({
       url: `${apiUrl}/learnJS/course/1/teams`
     });
-    let homeworkInfoResult = await get({
-      url: `${apiUrl}/learnJS/course/1/homework`
-    });
-    let catelogResult = await get({
-      url: `${apiUrl}/learnJS/course/1/catelog`
+    let rankingResult = await get({
+      url: `${apiUrl}/learnJS/course/1/ranking`
     });
 
     res.render('index', {
+      words: wordsResult.words,
       teamInfo: md.render(teamInfoResult.teamInfo),
-      homeworkInfoList: homeworkInfoResult.homeworkInfo,
-      gitTopicsList: catelogResult.catelog.gitTopicsList,
-      pptList: catelogResult.catelog.pptList,
-      topicsList: catelogResult.catelog.topicsList
+      rankingInfo: rankingResult.ranking
     });
   } catch (err) {
     next(err);

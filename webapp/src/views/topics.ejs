@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('_head') %>
+
+  <body>
+    <div id="app">
+      <%- include('_nav') %>
+      <%- include('_header') %>
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">GIT & GITHUB</h3>
+              </div>
+              <div class="panel-body">
+                <% for(var i = 0; i < gitTopicsList.length; i++) {%>
+                  <li class="list-group-item list-group-item-x">
+                    <a href="<%= gitTopicsList[i].url %>">
+                      <%= gitTopicsList[i].title %>
+                    </a>
+                  </li>
+                  <% } %>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">课程的技术文档</h3>
+              </div>
+              <div class="panel-body">
+                <% for(var i = 0; i < topicsList.length; i++) {%>
+                  <li class="list-group-item list-group-item-x">
+                    <a href="<%= topicsList[i].url %>">
+                      <%= topicsList[i].title %>
+                    </a>
+                  </li>
+                  <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="footer">
+      <img class="avatar" src="https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg"></img>
+    </div>
+  </body>
+
+</html>

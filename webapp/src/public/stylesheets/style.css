@@ -18,6 +18,13 @@
   background-image: url(../images/background.jpg);
 }
 
+.container-x {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .xingda {
   float: right;
   margin-right: 20px;
@@ -95,6 +102,16 @@
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.avatarWall {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  float: left;
+  cursor: default;
 }
 
 .media-x {

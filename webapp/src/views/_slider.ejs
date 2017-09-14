@@ -67,22 +67,5 @@
       </div>
     </div>
   </div>
-
-
-  <% if (typeof homeworkInfoList !== 'undefined') { %>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      作业
-    </div>
-    <div class="panel-body">
-      <ul class="list-group">
-        <li class="list-group-item list-group-item-x"><a href="/words">心里话</a></li>
-        <% for(var i = 0; i < homeworkInfoList.length; i++) { %>
-        <li class="list-group-item list-group-item-x"><a href="<%= homeworkInfoList[i].url %>">第<%= i + 1 %>次作业 <span class="badge"><%= homeworkInfoList[i].count %></span></a></li>
-        <% } %>
-      </ul>
-    </div>
-  </div>
-  <% } %>
 </div>
 

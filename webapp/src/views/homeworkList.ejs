@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('_head') %>
+
+  <body>
+    <div id="app">
+      <%- include('_nav') %>
+        <%- include('_header') %>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  作业
+                </div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <% for(var i = 0; i < homeworkInfoList.length; i++) { %>
+                    <li class="list-group-item list-group-item-x"><a href="/homework/detail/<%= i+1 %>">第<%= i + 1 %>次作业 <span class="badge"><%= homeworkInfoList[i].count %></span></a></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="footer">
+      <img class="avatar" src="https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg"></img>
+    </div>
+  </body>
+</html>
