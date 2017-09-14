@@ -1,8 +1,8 @@
 /*
 *
 *  【运行步骤】
-*  1. 终端进入到getting-started-with-javascript/study/lesson3
-*  2. > node sample_code.js
+*  1. 终端进入到getting-started-with-javascript/study/lesson4
+*  2. > node build_a_human.js
 *
 */
 
@@ -10,8 +10,7 @@
 
 var name = 'xiaoming';
 var age = 18;
-var height = 170,
-  weight = 130.1;
+var height = 170, weight = 130.1;
 var isMan = true;
 var student = false;
 var xinshengUserName = 'xiaoming';
