@@ -47,14 +47,38 @@
 
 </html>
 <script>
-  // vue官网： https://cn.vuejs.org/v2/guide/
-  // 初始化Vue
-  // 把收集的数据放在这里
-  
-  new Vue({
-    el: '#app',   // #app 和html中div#id的 app 对应
-    data: {
-      wordsList: fileList()  // 变量wordsList可以在html使用
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    courseInfo: {},
+    gitTopics: [],
+    ppt: [],
+    topics: []
+  },
+  methods: {
+    getCourseInfo() {
+      var that = this;
+      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/detail', function(data) {
+        if (data && data.code === 1) {
+          that.courseInfo = data.courseInfo;
+        } else {
+          alert('fetch data error.');
+        }
+      });
+    },
+    getTopics() {
+      var that = this;
+      $.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog', function(data) {
+
+        if (data && data.code === 1) {
+          that.gitTopics = data.catelog.gitTopicsList;
+          that.ppt = data.catelog.pptList;
+          that.topics = data.catelog.topicsList;
+        } else {
+          alert('fetch data error.');
+        }
+      });
     }
   });
 </script>

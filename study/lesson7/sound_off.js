@@ -46,7 +46,7 @@ function soldierE(number, allCount) {
 }
 
 function startSoundOff() {
-  var allCount = 6;
+  var allCount = 5;
   var result = soldierA(1, allCount);
 
   if (result === 'finished') {
