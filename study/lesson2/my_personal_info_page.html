@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -6,11 +6,19 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
+<<<<<<< HEAD
 <div id= "app">
   <div class="main-header">
     <div class="container">
       <h1>我的个人信息</h1>
       <p>{{person.name}}</p>
+=======
+<div id="app">
+  <div class="main-header">
+    <div class="container">
+      <h1>小明的个人信息</h1>
+      <P>{{ person.name}}</p>
+>>>>>>> upstream/master
     </div>
   </div>
   <div>
@@ -24,9 +32,11 @@
 <script>
 //声明并定义变量
 
+ alert('hello,js');
+
 var name = 'xiaoming';
-var age = 18;
-var height = 170, weight = 130.1;
+var age = 45;
+var height = 180, weight = 160;
 var isMan = true;
 var student = false;
 var xinshengUserName = 'xiaoming';
@@ -118,10 +128,18 @@ var xiaoming = {
 
 console.log(xiaoming);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 var app = new Vue({
   el: '#app',
   data: {
     person: xiaoming
   }
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 </script>

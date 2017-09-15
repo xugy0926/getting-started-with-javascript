@@ -1,0 +1,6 @@
+sample.js
+function run(name) {
+  console.log(name + 'is running');
+}
+
+run();

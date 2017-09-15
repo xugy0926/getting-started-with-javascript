@@ -1,3 +1,5 @@
 # Ignore Mac OS desktop services store
 .DS_Store
+package-lock.json
 node_modules
+dist
