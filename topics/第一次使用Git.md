@@ -17,24 +17,24 @@
 指令和代码的对比如下：
 
 ```shell
-//这是一条终端指令，用 `>` 来凸显这是一条指令
+//这是一条终端指令，用 `>` 来凸显这是一条指令，不用输入 `>`
 > git push origin master
 
-// 这是一行代码，也不带 `>`
+// 这是一行代码，也不用输入 `>`
 var i = 0;
 ```
 
-1. 指令的构成，该空格的一定要空格，不然很可能出错。
+2. 指令的构成，该空格的一定要空格，不然很可能出错。
 
 ```shell
 // 错误
-> xcode-select—install // select后面没有空格
+> xcode-select—-install // select后面没有空格
 
 // 正确
-> xcode-select —install // select后面有空格
+> xcode-select -—install // select后面有空格
 ```
 
-1. 双引号要用英文，不要用中文。编程的时候尽量切换到英文键盘下，需要输入中文的时候也要仔细小心。
+3. 双引号要用英文，不要用中文。编程的时候尽量切换到英文键盘下，需要输入中文的时候也要仔细小心。
 
 ```shell
 // 错误
@@ -44,7 +44,7 @@ var i = 0;
 > git commit -m "这是一次提交" // 要用英文""
 ```
 
-1. 终端常用指令总结
+4. 终端常用指令总结
 
 [mac终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md)
 [win终端](https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md)
