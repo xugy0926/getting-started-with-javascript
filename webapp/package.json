@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "prestart": "npm run -s build",
-    "start": "NODE_ENV=production node dist/bin/www",
+    "start": "NODE_ENV=production PORT=3002 node dist/bin/www",
     "dev": "nodemon src/bin/www --exec \"node -r dotenv/config -r babel-register\"",
     "clean": "rimraf dist",
     "build": "npm run clean && mkdir -p dist && babel src -s -D -d dist",
