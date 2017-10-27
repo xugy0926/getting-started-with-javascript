@@ -4,4 +4,5 @@
 
 感谢大家的努力
 
-请[点这里](https://js.xinshengdaxue.com/)访问我们的家！
+请[点这里](https://js.7xinsheng.com/)访问我们的家！
+
