@@ -2,6 +2,8 @@
 补交
 
 这是补得非常迟的作业...  
+
+
 第一个图是照着老师的图改的。  
 ![](https://raw.githubusercontent.com/wiki/ifoundu/getting-started-with-javascript/huangBiLing1.png)
 
