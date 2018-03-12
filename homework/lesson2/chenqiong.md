@@ -1,12 +1,11 @@
 # JavaScript 入门课第二课总结
 
 ## 使用 GitHub 免费生成静态网页的技巧
-第一步：在 GitHub 上创建一个空项目，然后 git clone 到本地。
-第二步：把写好的 HTML 页面复制到本地项目，git add ，git commit ,git push origin master。
-第三步：回到 GitHub 找到刚才创建的项目，此时项目里面已经有 HTML 文件了，Settings，GitHub Pages，选择 master branch， save，然后你就可以看到
-Your site is published at https://xxxx(你的 GitHub 用户名).github.io/xxxx(你的项目名称)，直接点击这个网址，就可以访问你创建的静态网页了。
-以后如果要修改，只需要在本地改好，push 到远程仓库，稍等片刻，就可以看到改动后的效果了。
-我运用此方法，成功迁移了一个可以提高同事工作效率的工具，虽然还需手动添加信息，但是后续会尝试迭代(https://jacksparrow008.github.io/work/)。
+* 第一步：在 GitHub 上创建一个空项目，然后 git clone 到本地。
+* 第二步：把写好的 HTML 页面复制到本地项目，git add ，git commit ,git push origin master。
+* 第三步：回到 GitHub 找到刚才创建的项目，此时项目里面已经有 HTML 文件了，Settings，GitHub Pages，选择 master branch， save。
+* 以后如果要修改，只需要在本地改好，push 到远程仓库，稍等片刻，就可以看到改动后的效果了。
+* 我运用此方法，成功迁移了一个可以提高同事工作效率的工具，虽然还需手动添加信息，但是后续会尝试迭代 https://jacksparrow008.github.io/work/
 
 ## 一切从命名开始
 
@@ -20,7 +19,7 @@ Your site is published at https://xxxx(你的 GitHub 用户名).github.io/xxxx(�
 当变量名和函数名由两个或者两个以上单词构成时，利用"驼峰式大小写"来表示，以增加变量和函数的可读性。
 * 小驼峰式命名法：第一个单词首字母小写，后面每个单词的首字母都大写。例如：myLikeColorsList、locaitonBase。
 * 大驼峰式命名法：每一个单词的首字母都采用大写。例如：FirstName、LastName。
-"驼峰式大小写"命名规则只是一种惯例，并没有绝对与强制，只是为了增加代码的可读性，降低后续维护难度。一旦设置并确定命名规则，在编写代码时应该保持格式的一致性。
+* "驼峰式大小写"命名规则只是一种惯例，并没有绝对与强制，只是为了增加代码的可读性，降低后续维护难度。一旦设置并确定命名规则，在编写代码时应该保持格式的一致性。
 
 ### 不管采用何种命名方式，前面的四条原则必须遵守
 
