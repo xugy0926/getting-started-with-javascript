@@ -4,7 +4,7 @@ var filePath = '../words';
 // 同步方式将文件名写入文件
 var outputPathSync = './file_name_sync.txt';
 var fileNames = fs.readdirSync(filePath);
-fs.writeFileSync(outputPath, fileNames);
+fs.writeFileSync(outputPathSync, fileNames);
 
 // 异步方式将文件名写入文件
 var outputPathAsync = './file_name_async.txt';
