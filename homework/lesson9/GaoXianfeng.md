@@ -9,6 +9,7 @@ function callback(err, files) {
     console.log('读取文件失败');
     return;
   }
+  
   for (var i = 0; i < files.length; i++) {
     if (files[i].endsWith('.json')) {
       names.push(files[i]);
@@ -18,4 +19,24 @@ function callback(err, files) {
 
 fs.readdir(dirPathString, callback);
 fs.writeFile(outputPathString, names, callback2);
+```
+正确写法
+
+```
+function callback(err, files) {
+  if (err) {
+    console.log('读取文件失败');
+    return;
+  }
+  
+  for (var i = 0; i < files.length; i++) {
+    if (files[i].endsWith('.json')) {
+      names.push(files[i]);
+    }
+  }
+  
+  fs.writeFile(outputPathString, names, callback2);
+}
+
+fs.readdir(dirPathString, callback);
 ```
