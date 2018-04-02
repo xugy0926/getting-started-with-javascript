@@ -1,6 +1,6 @@
 ## 什么是JSON
 >
-JSON全称JavaScript Object Notation，翻译成中文是 JavaScript对象表示法。
+>JSON全称JavaScript Object Notation，翻译成中文是 JavaScript对象表示法。
 
 JSON格式的数据格式非常适合于服务器与 JavaScript 的数据交互，JSON数据格式也成为轻量级数据交换格式。
 
@@ -74,7 +74,7 @@ JSON格式的数据格式非常适合于服务器与 JavaScript 的数据交互�
 ```
 //错误
 {
-  姓名: "jack"  //key使用了中文
+  "姓名": "jack"  //key使用了中文
 }
 
 //正确
@@ -85,7 +85,7 @@ JSON格式的数据格式非常适合于服务器与 JavaScript 的数据交互�
 ```
 //错误
 {
-  name: “杰克”  //使用了中文的双引号
+  "name": “杰克”  //使用了中文的双引号
 }
 
 //正确
