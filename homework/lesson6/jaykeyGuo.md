@@ -5,7 +5,7 @@
 var fs = require('fs');
 //定义读取路径
 var dirPathString = '../../../words-from-the-heart/words';
-//定义写出路径
+//定义写出路径git revert HEAD
 var filePathString = "../write_words_async.txt"
 //定义写出回调函数
 function callbackForWrite(err) {
