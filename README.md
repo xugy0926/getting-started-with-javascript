@@ -6,3 +6,4 @@
 
 请[点这里](https://js.7xinsheng.com/)访问我们的家！
 
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fuzrn9i6vvj3076076jru.jpg)
